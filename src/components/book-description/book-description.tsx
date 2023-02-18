@@ -1,4 +1,4 @@
-import { IBook } from '../../types/types';
+import { IBookInfo } from '../../types/types';
 import { SecondarySmallTitle } from '../../ui/typography';
 import { NoRating, ReviewsList, Separator, Stars } from '..';
 
@@ -18,11 +18,11 @@ import {
 } from './styles';
 
 interface IProps {
-  book: IBook;
+  book: IBookInfo;
 }
 
 export const BookDescription = ({ book }: IProps) => {
-  const { rating, publishing, year, pages, format, binding, weight, ISBN, manufacturer, category } = book;
+  const { rating, publish, issueYear, pages, format, cover, weight, ISBN, producer, categories, comments } = book;
 
   return (
     <StyledBookDescription>
@@ -31,14 +31,14 @@ export const BookDescription = ({ book }: IProps) => {
 
         <Separator />
 
-        {rating === '' ? (
+        {rating === null ? (
           <NoRatingRow>
             <NoRating />
             <RatingText>еще нет оценок</RatingText>
           </NoRatingRow>
         ) : (
           <RatingRow>
-            <Stars rating={rating} />
+            {/* <Stars rating={rating} /> */}
             <NumberRating>{rating}</NumberRating>
           </RatingRow>
         )}
@@ -52,12 +52,12 @@ export const BookDescription = ({ book }: IProps) => {
           <DescriptionContainer>
             <DescriptionRow>
               <InfoTitle>Издательство</InfoTitle>
-              <Info>{publishing}</Info>
+              <Info>{publish}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Год издания</InfoTitle>
-              <Info>{year}</Info>
+              <Info>{issueYear}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
@@ -67,7 +67,7 @@ export const BookDescription = ({ book }: IProps) => {
 
             <DescriptionRow>
               <InfoTitle>Переплет</InfoTitle>
-              <Info>{binding}</Info>
+              <Info>{cover}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
@@ -79,7 +79,7 @@ export const BookDescription = ({ book }: IProps) => {
           <DescriptionContainer>
             <DescriptionRow>
               <InfoTitle>Жанр</InfoTitle>
-              <Info>{category}</Info>
+              {categories ? <Info>{categories.join(', ')}</Info> : <Info>-</Info>}
             </DescriptionRow>
 
             <DescriptionRow>
@@ -94,13 +94,13 @@ export const BookDescription = ({ book }: IProps) => {
 
             <DescriptionRow>
               <InfoTitle>Изготовитель</InfoTitle>
-              <Info>{manufacturer}</Info>
+              <Info>{producer}</Info>
             </DescriptionRow>
           </DescriptionContainer>
         </WrapperDescription>
       </Description>
 
-      <ReviewsList comments={book.comments || []} />
+      <ReviewsList comments={comments} />
     </StyledBookDescription>
   );
 };

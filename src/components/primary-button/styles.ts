@@ -35,7 +35,7 @@ const StyledPrimaryButton = styled.button.attrs<IProps>((props) => ({
   }
 
   ${Media.SM} {
-    width: ${({ isBig, small }) => (isBig ? '100%' : small)};
+    width: 100%;
     font-size: 12px;
   }
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ContainerFlexColumn } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
-const StyledVerticalBooksContent = styled.div`
+const StyledSquareBooksContent = styled.div`
   display: grid;
   justify-content: center;
   align-content: center;
@@ -21,8 +21,8 @@ const StyledVerticalBooksContent = styled.div`
   }
 `;
 
-const StyledHorizontalBooksContent = styled(ContainerFlexColumn)`
+const StyledLineBooksContent = styled(ContainerFlexColumn)`
   grid-gap: 16px;
 `;
 
-export { StyledVerticalBooksContent, StyledHorizontalBooksContent };
+export { StyledSquareBooksContent, StyledLineBooksContent };

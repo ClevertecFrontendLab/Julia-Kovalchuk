@@ -6,13 +6,13 @@ import { AxiosError } from 'axios';
 import { bookAPI } from '../../services/book-api';
 import { IBookShortInfo } from '../../types/types';
 
-interface ICategoriesState {
+interface IAllBooksState {
   allBooks: IBookShortInfo[];
   isLoading: boolean;
   error: null | string | undefined;
 }
 
-const initialState: ICategoriesState = {
+const initialState: IAllBooksState = {
   allBooks: [],
   isLoading: false,
   error: null,

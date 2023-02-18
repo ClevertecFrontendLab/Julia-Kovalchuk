@@ -37,7 +37,7 @@ export const LineBookCard = ({ book }: IProps) => {
         <Title>{title}</Title>
 
         <WrapperText>
-          <Text>{authors.join(', ')}, </Text>
+          <Text>{authors?.join(', ')}, </Text>
           <Text>{issueYear}</Text>
         </WrapperText>
 

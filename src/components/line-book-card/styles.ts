@@ -30,10 +30,9 @@ const WrapperImage = styled.div`
 const Image = styled.img`
   width: 120px;
   height: 170px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid #a7a7a7;
   border-radius: 3px;
-  padding: 7px 2px;
 
   ${Media.MD} {
     width: 120px;

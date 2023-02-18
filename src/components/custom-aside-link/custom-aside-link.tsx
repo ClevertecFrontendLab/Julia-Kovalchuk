@@ -10,13 +10,14 @@ interface IProps {
   children: ReactNode;
   onClick?: () => void;
   type: 'primary' | 'secondary' | 'tertiary';
+  state?: string | { from: string };
 }
 
-export const CustomAsidelink = ({ to, children, onClick, type }: IProps) => {
+export const CustomAsidelink = ({ to, children, onClick, type, state }: IProps) => {
   const IsActive = useMatch(to);
 
   return (
-    <StyledCustomLink $active={IsActive} type={type} to={to} onClick={onClick}>
+    <StyledCustomLink $active={IsActive} type={type} to={to} onClick={onClick} state={state}>
       {children}
     </StyledCustomLink>
   );

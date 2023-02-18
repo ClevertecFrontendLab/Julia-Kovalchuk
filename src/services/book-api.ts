@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-import { IBookShortInfo, ICategory } from '../types/types';
-// import {
-//   IMovieDetailsAPI,
-//   IMoviesAPIResponse,
-//   ISearchParams,
-// } from 'types/types';
-// import { getRandomNumber } from 'utils/getRandomNumber';
+import { IBookInfo, IBookShortInfo, ICategory } from '../types/types';
+
+enum Endpoint {
+  CATEGORIES = 'categories',
+  ALLBOOKS = 'books',
+  DETAILS = 'books/',
+}
 
 class BookAPI {
   private readonly BASE_URL = 'https://strapi.cleverland.by/api';
@@ -16,72 +16,22 @@ class BookAPI {
   });
 
   public async getCategories() {
-    const { data } = await this.API.get<ICategory[]>('categories');
+    const { data } = await this.API.get<ICategory[]>(Endpoint.CATEGORIES);
 
     return data;
   }
 
   public async getAllBooks() {
-    const { data } = await this.API.get<IBookShortInfo[]>('books');
+    const { data } = await this.API.get<IBookShortInfo[]>(Endpoint.ALLBOOKS);
 
     return data;
   }
-  // public async getDetailsById(id: string) {
-  //   const params = {
-  //     i: id,
-  //   };
 
-  //   const { data } = await this.API.get<IMovieDetailsAPI>('', { params });
+  public async getBookDetails(id: string) {
+    const { data } = await this.API.get<IBookInfo>(`${Endpoint.DETAILS}${id}`);
 
-  //   return data;
-  // }
-
-  // public async getNewMovies(page: number) {
-  //   const currentYear = new Date().getFullYear();
-
-  //   const params = {
-  //     s: this.getRandomWord(this.wordForMovie),
-  //     y: currentYear,
-  //     page,
-  //   };
-
-  //   const { data } = await this.API.get<IMoviesAPIResponse>('', { params });
-
-  //   return data;
-  // }
-
-  // public async getMoviesRecommendations(
-  //   name: string,
-  //   type: string,
-  //   year: string,
-  // ) {
-  //   const params = {
-  //     s: name,
-  //     type,
-  //     y: year,
-  //   };
-
-  //   const { data } = await this.API.get<IMoviesAPIResponse>('', { params });
-
-  //   return data;
-  // }
-
-  // public async getMovieBySearchParams(
-  //   searchParams: ISearchParams,
-  // ): Promise<IMoviesAPIResponse> {
-  //   const params = {
-  //     s: searchParams.title,
-  //     type: searchParams.type,
-  //     y: searchParams.year,
-  //     page: searchParams.page,
-  //   };
-
-  //   const { data } = await this.API.get<IMoviesAPIResponse>('', {
-  //     params,
-  //   });
-
-  //   return data;
-  // }
+    return data;
+  }
 }
 
 export const bookAPI = new BookAPI();

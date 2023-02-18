@@ -2,88 +2,11 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
+import { useAppSelector } from '../../store/hooks/hooks';
+import { getCategories } from '../../store/selectors/categories-selector';
 import { CustomAsidelink } from '../custom-aside-link/custom-aside-link';
 
-import { Amount, ButtonHide, CategoryBox, Container, ContainerLink, ProfileContainer, Wrapper } from './styles';
-
-interface ICategory {
-  category: string;
-  name: string;
-  amount: number;
-}
-
-const dataCategories: ICategory[] = [
-  {
-    category: 'business',
-    name: 'Бизнес-книги',
-    amount: 5,
-  },
-  {
-    category: 'detective',
-    name: 'Детективы',
-    amount: 3,
-  },
-  {
-    category: 'children',
-    name: 'Детские книги',
-    amount: 15,
-  },
-  {
-    category: 'foreign',
-    name: 'Зарубежная литература',
-    amount: 1,
-  },
-  {
-    category: 'history',
-    name: 'История',
-    amount: 21,
-  },
-  {
-    category: 'classic',
-    name: 'Классическая литература',
-    amount: 17,
-  },
-  {
-    category: 'psychology',
-    name: 'Книги по психологии',
-    amount: 55,
-  },
-  {
-    category: 'computers',
-    name: 'Компьютерная литература',
-    amount: 18,
-  },
-  {
-    category: 'culture',
-    name: 'Культура и искусство',
-    amount: 1,
-  },
-  {
-    category: 'science',
-    name: 'Наука и образование',
-    amount: 62,
-  },
-  {
-    category: 'publicistic',
-    name: 'Публицистическая литература',
-    amount: 8,
-  },
-  {
-    category: 'references',
-    name: 'Справочники',
-    amount: 5,
-  },
-  {
-    category: 'scifi',
-    name: 'Фантастика',
-    amount: 4,
-  },
-  {
-    category: 'humor',
-    name: 'Юмористическая литература',
-    amount: 0,
-  },
-];
+import { ButtonHide, CategoryBox, Container, ContainerLink, ProfileContainer, Wrapper } from './styles';
 
 interface IProps {
   isOpen: boolean;
@@ -94,6 +17,8 @@ interface IProps {
 }
 
 export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategoryView, isOpenCategory }: IProps) => {
+  const { categories } = useAppSelector(getCategories);
+
   const handleClick = () => {
     handleView();
     handleBurgerView();
@@ -115,16 +40,17 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
           <CustomAsidelink to={ROUTE.BOOKS} type='primary'>
             <div data-test-id='burger-books'>Все книги</div>
           </CustomAsidelink>
-          {dataCategories.map(({ category, name, amount }) => (
+          {categories.map(({ name, path }) => (
             <CustomAsidelink
-              to={`${ROUTE.BOOKS}/${category}`}
+              to={`${ROUTE.BOOKS}/${path}`}
               onClick={handleBurgerView}
               type='tertiary'
               key={uuidv4()}
+              state={{ from: name }}
             >
               <p>
                 {name}
-                <Amount>{amount}</Amount>
+                {/* <Amount>{amount}</Amount> */}
               </p>
             </CustomAsidelink>
           ))}

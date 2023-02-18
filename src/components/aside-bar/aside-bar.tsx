@@ -34,7 +34,7 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
             <div data-test-id='navigation-books'>Все книги</div>
           </CustomAsidelink>
           {categories.map(({ name, path }) => (
-            <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()}>
+            <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ from: name }}>
               <p>
                 {name}
                 {/* <Amount>{amount}</Amount> */}

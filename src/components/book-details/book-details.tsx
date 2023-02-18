@@ -2,11 +2,11 @@ import React from 'react';
 
 import { NoImageIcon } from '../../assets';
 import { useWindowSize } from '../../hooks/use-window-size';
-import { IBook } from '../../types/types';
+import { IBookInfo } from '../../types/types';
 import { Breackpoint } from '../../ui/media';
 import { Title } from '../../ui/typography';
 import { SliderMini } from '../slider-mini/slider-mini';
-import { ButtonOccupied, ButtonOccupiedUntil, PrimaryButton, Slider } from '..';
+import { ButtonOccupied, PrimaryButton, Slider } from '..';
 
 import {
   Author,
@@ -23,48 +23,52 @@ import {
 } from './styles';
 
 interface IProps {
-  book: IBook;
+  book: IBookInfo;
 }
 
 export const BookDetails = ({ book }: IProps) => {
   const { width = 0 } = useWindowSize();
-  const { image, title, author, year, isBooked, bookedTill } = book;
+  const { images, title, authors, issueYear, booking, description } = book;
 
   return (
     <React.Fragment>
       <StyledBookDetails>
         <WrapperImage>
-          {image.length? (image.length === 1 ? (
-            <Image src={image[0]} alt={title} />
+          {images ? (
+            images.length === 1 ? (
+              <Image src={`https://strapi.cleverland.by${images[0].url}`} alt={title} />
+            ) : width > Breackpoint.MD ? (
+              <Slider images={images} />
+            ) : (
+              <SliderMini images={images} />
+            )
           ) : (
-            width > Breackpoint.MD? <Slider image={image}/> : <SliderMini image={image}/>
-          )) : (
             <NoImage>
               <NoImageIcon />
             </NoImage>
-          ) }
+          )}
         </WrapperImage>
 
         <WrapperContent>
           <Title>{title}</Title>
 
           <Author>
-            <WrapperText>{author}, </WrapperText>
-            <WrapperText>{year}</WrapperText>
+            {authors && <WrapperText>{authors?.join(', ')}, </WrapperText>}
+            <WrapperText>{issueYear}</WrapperText>
           </Author>
 
-          {isBooked === true && bookedTill === '' && (
-            <ButtonOccupied large={350} middle={306} small={288} padding={14} fontSize={16} isBig={true}>
+          {booking?.order === true && (
+            <ButtonOccupied large={350} middle={306} padding={14} fontSize={16} isBig={false}>
               Забронировано
             </ButtonOccupied>
           )}
-          {isBooked === true && bookedTill !== '' && (
-            <ButtonOccupiedUntil large={350} middle={306} small={288} padding={14} fontSize={16} isBig={true}>
+          {/* {isBooked === true && bookedTill !== '' && (
+            <ButtonOccupiedUntil large={350} middle={306} padding={14} fontSize={16} isBig={false}>
               Занята до 25.02
             </ButtonOccupiedUntil>
-          )}
-          {isBooked === false && (
-            <PrimaryButton large={350} middle={306} small={288} padding={14} fontSize={16} isBig={true}>
+          )} */}
+          {booking === null && (
+            <PrimaryButton large={350} middle={306} padding={14} fontSize={16} isBig={false}>
               Забронировать
             </PrimaryButton>
           )}
@@ -72,13 +76,7 @@ export const BookDetails = ({ book }: IProps) => {
           {width > Breackpoint.MD && (
             <WrapperDekstopDescription>
               <TitleDescription>О книге</TitleDescription>
-              <Description>
-                Алгоритмы — это всего лишь пошаговые алгоритмы решения задач, и большинство таких задач уже были кем-то
-                решены, протестированы и проверены. Можно, конечно, погрузится в глубокую философию гениального Кнута,
-                изучить многостраничные фолианты с доказательствами и обоснованиями, но хотите ли вы тратить на это свое
-                время? Откройте великолепно иллюстрированную книгу и вы сразу поймете, что алгоритмы — это просто. А
-                грокать алгоритмы — это веселое и увлекательное занятие.
-              </Description>
+              <Description>{description}</Description>
             </WrapperDekstopDescription>
           )}
         </WrapperContent>
@@ -87,13 +85,7 @@ export const BookDetails = ({ book }: IProps) => {
       {width < Breackpoint.MD && (
         <WrapperTabletDescription>
           <TitleDescription>О книге</TitleDescription>
-          <Description>
-            Алгоритмы — это всего лишь пошаговые алгоритмы решения задач, и большинство таких задач уже были кем-то
-            решены, протестированы и проверены. Можно, конечно, погрузится в глубокую философию гениального Кнута,
-            изучить многостраничные фолианты с доказательствами и обоснованиями, но хотите ли вы тратить на это свое
-            время? Откройте великолепно иллюстрированную книгу и вы сразу поймете, что алгоритмы — это просто. А грокать
-            алгоритмы — это веселое и увлекательное занятие.
-          </Description>
+          <Description>{description} </Description>
         </WrapperTabletDescription>
       )}
     </React.Fragment>

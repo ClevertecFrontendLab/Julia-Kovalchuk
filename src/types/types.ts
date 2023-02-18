@@ -35,10 +35,10 @@ export interface ICategory {
 export interface IBookingInfo {
   id: number;
   order: boolean;
-  dateOrder: string;
-  customerId: number;
-  customerFirstName: string;
-  customerLastName: string;
+  dateOrder: string | null;
+  customerId: number | null;
+  customerFirstName: string | null;
+  customerLastName: string | null;
 }
 
 export interface IHistoryInfo {
@@ -47,20 +47,20 @@ export interface IHistoryInfo {
 }
 
 export interface IBookImage {
-  url: string;
+  url: string | null;
 }
 
 export interface IUser {
   commentUserId: number;
   firstName: string;
   lastName: string;
-  avatarUrl: string;
+  avatarUrl: string | null;
 }
 
 export interface IComment {
   id: string;
   rating: number;
-  text: string;
+  text: string | null;
   createdAt: string;
   user: IUser;
 }
@@ -68,23 +68,23 @@ export interface IComment {
 export interface IDelivery {
   id: number;
   handed: boolean;
-  dateHandedFrom: string;
-  dateHandedTo: string;
-  recipientId: number;
-  recipientFirstName: string;
-  recipientLastName: string;
+  dateHandedFrom: string | null;
+  dateHandedTo: string | null;
+  recipientId: number | null;
+  recipientFirstName: string | null;
+  recipientLastName: string | null;
 }
 
 export interface IBookShortInfo {
-  issueYear: string;
+  issueYear: string | null;
   rating: number | null;
   title: string;
-  authors: string[];
+  authors: string[] | null;
   image: IBookImage;
-  categories: string[];
+  categories: string[] | null;
   id: number;
   booking: null | IBookingInfo;
-  delivery: null;
+  delivery: null | IDelivery;
   histories: null | IHistoryInfo[];
 }
 
@@ -92,19 +92,19 @@ export interface IBookInfo {
   id: number;
   title: string;
   rating: null | number;
-  issueYear: string;
-  description: string;
-  publish: string;
-  pages: string;
-  cover: string;
-  weight: string;
-  format: string;
-  ISBN: string;
-  producer: string;
-  authors: string[];
+  issueYear: string | null;
+  description: string | null;
+  publish: string | null;
+  pages: string | null;
+  cover: string | null;
+  weight: string | null;
+  format: string | null;
+  ISBN: string | null;
+  producer: string | null;
+  authors: string[] | null;
   images: IBookImage[];
   categories: string[];
-  comments: null | IComment;
+  comments: null | IComment[];
   booking: null | IBookingInfo;
   delivery: null | IDelivery;
   histories: null | IHistoryInfo[];

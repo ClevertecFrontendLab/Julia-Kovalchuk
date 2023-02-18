@@ -16,12 +16,17 @@ export const SecondTemplate = () => {
     setIsOpen(false);
   };
 
-  
   return (
-  <Wrapper>
-    <AsideBar data-test-id='navigation-showcase' isOpen={isOpen} handleCategoryView={handleCategoryView} handleView={handleView}/>
-    <ContentBox>
-      <Outlet />
-    </ContentBox>
-  </Wrapper>
-)};
+    <Wrapper>
+      <AsideBar
+        data-test-id='navigation-showcase'
+        isOpen={isOpen}
+        handleCategoryView={handleCategoryView}
+        handleView={handleView}
+      />
+      <ContentBox>
+        <Outlet />
+      </ContentBox>
+    </Wrapper>
+  );
+};

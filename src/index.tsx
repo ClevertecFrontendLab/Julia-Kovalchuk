@@ -20,7 +20,7 @@ root.render(
         <HashRouter>
           <Routes>
             <Route path={ROUTE.HOME} element={<MainTemplate />}>
-              <Route path={ROUTE.DETAILS} element={<BookPage />} />
+              <Route path={`${ROUTE.DETAILS}:id`} element={<BookPage />} />
               <Route path={ROUTE.HOME} element={<SecondTemplate />}>
                 <Route index={true} element={<MainPage />} />
                 <Route path={ROUTE.OFFER} element={<ContractPage content='offer' />} />

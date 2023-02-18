@@ -1,3 +1,4 @@
+/* eslint-disable no-negated-condition */
 /* eslint-disable @typescript-eslint/naming-convention */
 import styled from 'styled-components';
 

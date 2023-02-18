@@ -41,7 +41,7 @@ export const SquareBookCard = ({ book }: IProps) => {
 
       <SubTitle>
         <WrapperText>
-          <Text>{authors.join(', ')}, </Text>
+          <Text>{authors?.join(', ')}, </Text>
           <Text>{issueYear}</Text>
         </WrapperText>
       </SubTitle>

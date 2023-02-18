@@ -22,18 +22,13 @@ const Wrapper = styled(ContainerFlexBeetween)<RenderType>`
   ${Media.MD} {
     top: -64px;
     width: 100%;
-    /* max-width: 90%; */
     min-width: 640px;
     padding: 27px 19px;
   }
 
   ${Media.SM} {
-    /* max-width: 100%;
-    width: 95%; */
     top: -44px;
-
     min-width: 280px;
-
     padding: 12px 19px;
     font-size: 14px;
     line-height: 18px;

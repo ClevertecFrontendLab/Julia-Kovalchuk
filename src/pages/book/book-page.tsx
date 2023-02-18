@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation, useParams } from 'react-router-dom';
 
-import books from '../../books.json';
-import { BookDescription,BookDetails, Breadcrumbs } from '../../components';
+import { BookDescription, BookDetails, Breadcrumbs, Loader, MessageWindow } from '../../components';
+import { fetchBook } from '../../store/feautures/book-slice';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { getBook } from '../../store/selectors/book-selector';
 
-export const BookPage = () => (
-  <React.Fragment>
-    <Breadcrumbs />
-    <BookDetails book={books.business[0]} />
-    <BookDescription book={books.business[0]} />
-  </React.Fragment>
-);
+export const BookPage = () => {
+  const { id } = useParams();
+  const dispatch = useAppDispatch();
+  const { isLoading, book, error } = useAppSelector(getBook);
+  const { state } = useLocation();
+
+  useEffect(() => {
+    if (id) dispatch(fetchBook(id));
+  }, [dispatch, id]);
+
+  return (
+    <React.Fragment>
+      <Breadcrumbs crumbs={state} />
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <MessageWindow type='error'>{error}</MessageWindow>
+      ) : (
+        <React.Fragment>
+          <BookDetails book={book} />
+          <BookDescription book={book} />
+        </React.Fragment>
+      )}
+    </React.Fragment>
+  );
+};
