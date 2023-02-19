@@ -76,7 +76,11 @@ export const BookDetails = ({ book }: IProps) => {
           {width > Breackpoint.MD && (
             <WrapperDekstopDescription>
               <TitleDescription>О книге</TitleDescription>
-              <Description>{description}</Description>
+              {description ? (
+                <Description>{description}</Description>
+              ) : (
+                <Description>Данная информация отсутствует</Description>
+              )}
             </WrapperDekstopDescription>
           )}
         </WrapperContent>
@@ -85,7 +89,11 @@ export const BookDetails = ({ book }: IProps) => {
       {width < Breackpoint.MD && (
         <WrapperTabletDescription>
           <TitleDescription>О книге</TitleDescription>
-          <Description>{description} </Description>
+          {description ? (
+            <Description>{description}</Description>
+          ) : (
+            <Description>Данная информация отсутствует</Description>
+          )}
         </WrapperTabletDescription>
       )}
     </React.Fragment>

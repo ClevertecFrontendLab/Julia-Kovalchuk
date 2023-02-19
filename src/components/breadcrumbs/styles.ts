@@ -4,19 +4,16 @@ import { Media } from '../../ui/media';
 
 const StyledBreadcrumbs = styled.div`
   position: absolute;
-  /* top: 143px; */
   left: 0;
   width: 100%;
   padding-block: 23px;
   background: #f9f9fa;
 
   ${Media.MD} {
-    /* top: 128px; */
     padding-block: 20px;
   }
 
   ${Media.SM} {
-    /* top: 84px; */
   }
 `;
 

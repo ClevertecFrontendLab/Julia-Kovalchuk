@@ -38,7 +38,7 @@ export const BookDescription = ({ book }: IProps) => {
           </NoRatingRow>
         ) : (
           <RatingRow>
-            {/* <Stars rating={rating} /> */}
+            {rating && <Stars rating={rating} />}
             <NumberRating>{rating}</NumberRating>
           </RatingRow>
         )}
@@ -52,27 +52,27 @@ export const BookDescription = ({ book }: IProps) => {
           <DescriptionContainer>
             <DescriptionRow>
               <InfoTitle>Издательство</InfoTitle>
-              <Info>{publish}</Info>
+              <Info>{publish ? publish : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Год издания</InfoTitle>
-              <Info>{issueYear}</Info>
+              <Info>{issueYear ? issueYear : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Страниц</InfoTitle>
-              <Info>{pages}</Info>
+              <Info>{pages ? pages : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Переплет</InfoTitle>
-              <Info>{cover}</Info>
+              <Info>{cover ? cover : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Формат</InfoTitle>
-              <Info>{format}</Info>
+              <Info>{format ? format : '-'}</Info>
             </DescriptionRow>
           </DescriptionContainer>
 
@@ -84,17 +84,17 @@ export const BookDescription = ({ book }: IProps) => {
 
             <DescriptionRow>
               <InfoTitle>Вес</InfoTitle>
-              <Info>{weight}</Info>
+              <Info>{weight ? weight : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>ISBN</InfoTitle>
-              <Info>{ISBN}</Info>
+              <Info>{ISBN ? ISBN : '-'}</Info>
             </DescriptionRow>
 
             <DescriptionRow>
               <InfoTitle>Изготовитель</InfoTitle>
-              <Info>{producer}</Info>
+              <Info>{producer ? producer : '-'}</Info>
             </DescriptionRow>
           </DescriptionContainer>
         </WrapperDescription>

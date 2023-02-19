@@ -21,7 +21,6 @@ const StyledMainTemplate = styled.div`
 `;
 
 const StyledOutlet = styled.main`
-  position: relative;
   flex-grow: 1;
 `;
 

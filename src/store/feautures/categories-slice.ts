@@ -46,12 +46,10 @@ const categoriesSlice = createSlice({
     });
     builder.addCase(fetchCategories.rejected, (state, { payload }) => {
       state.isCategoriesLoading = false;
-      state.errorCategories = payload;
+      state.errorCategories = 'Что-то пошло не так. Обновите страницу через некоторое время.';
     });
   },
 });
 
 export default categoriesSlice.reducer;
 export { fetchCategories };
-
-// export const { createNextPage, clearMovies } = moviesSlice.actions;

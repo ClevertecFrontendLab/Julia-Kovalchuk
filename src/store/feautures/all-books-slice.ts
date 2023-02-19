@@ -46,7 +46,7 @@ const allBooksSlice = createSlice({
     });
     builder.addCase(fetchAllBooks.rejected, (state, { payload }) => {
       state.isLoading = false;
-      state.error = payload;
+      state.error = 'Что-то пошло не так. Обновите страницу через некоторое время.';
     });
   },
 });
