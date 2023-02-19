@@ -4,6 +4,8 @@ import { ContainerFlex } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
 const Wrapper = styled(ContainerFlex)`
+  position: relative;
+
   width: 1110px;
   max-width: 1100px;
   margin: 0px auto;

@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
 import { useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
 import { CustomAsidelink } from '../custom-aside-link/custom-aside-link';
 
@@ -17,6 +18,8 @@ interface IProps {
 
 export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => {
   const { categories } = useAppSelector(getCategories);
+  const { errorCategories } = useAppSelector(getCategories);
+  const { error } = useAppSelector(getAllBooks);
 
   return (
     <Wrapper>
@@ -25,24 +28,28 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
           <CustomAsidelink to={ROUTE.HOME} type='secondary'>
             <ContainerLink>
               <div>Витрина книг</div>
-              {isOpen ? <ArrowUpIcon fill='inherit' /> : <ArrowDownIcon fill='inherit' />}
+              {!errorCategories &&
+                !error &&
+                (isOpen ? <ArrowUpIcon fill='inherit' /> : <ArrowDownIcon fill='inherit' />)}
             </ContainerLink>
           </CustomAsidelink>
         </ButtonHide>
 
-        <CategoryBox $isOpen={isOpen}>
-          <CustomAsidelink to='' type='primary'>
-            <div data-test-id='navigation-books'>Все книги</div>
-          </CustomAsidelink>
-          {categories.map(({ name, path }) => (
-            <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ from: name }}>
-              <p>
-                {name}
-                {/* <Amount>{amount}</Amount> */}
-              </p>
+        {!errorCategories && !error && (
+          <CategoryBox $isOpen={isOpen}>
+            <CustomAsidelink to='' type='primary'>
+              <div data-test-id='navigation-books'>Все книги</div>
             </CustomAsidelink>
-          ))}
-        </CategoryBox>
+            {categories.map(({ name, path }) => (
+              <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ from: name }}>
+                <p>
+                  {name}
+                  {/* <Amount>{amount}</Amount> */}
+                </p>
+              </CustomAsidelink>
+            ))}
+          </CategoryBox>
+        )}
       </div>
       <CustomAsidelink to={ROUTE.RULES} onClick={handleView} type='secondary'>
         <div data-test-id='navigation-terms'>Правила пользования</div>

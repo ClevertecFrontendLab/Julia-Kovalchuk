@@ -6,14 +6,14 @@ import { fetchCategories } from '../../store/feautures/categories-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
-import { Footer, Header, MessageWindow } from '..';
+import { Footer, Header, Loader, MessageWindow } from '..';
 
 import { StyledMainTemplate, StyledOutlet } from './styles';
 
 export const MainTemplate = () => {
   const dispatch = useAppDispatch();
-  const { errorCategories } = useAppSelector(getCategories);
-  const { error } = useAppSelector(getAllBooks);
+  // const { isCategoriesLoading, errorCategories } = useAppSelector(getCategories);
+  // const { isLoading, error } = useAppSelector(getAllBooks);
 
   useEffect(() => {
     dispatch(fetchCategories());
@@ -22,8 +22,11 @@ export const MainTemplate = () => {
   return (
     <StyledMainTemplate>
       <Header />
-      {(errorCategories || error) && <MessageWindow type='error'>{error}</MessageWindow>}
-      <StyledOutlet>{!errorCategories && !error && <Outlet />}</StyledOutlet>
+
+      <StyledOutlet>
+        <Outlet />
+      </StyledOutlet>
+
       <Footer />
     </StyledMainTemplate>
   );

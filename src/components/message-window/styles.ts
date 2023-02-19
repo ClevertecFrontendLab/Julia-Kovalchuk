@@ -6,8 +6,9 @@ import { Media } from '../../ui/media';
 type RenderType = { $type: 'error' | 'success' };
 
 const Wrapper = styled(ContainerFlexBeetween)<RenderType>`
-  position: fixed;
-  top: 75px;
+  position: absolute;
+  left: 0;
+  top: -85px;
   min-width: 1110px;
   padding: 28px 33px 28px 36px;
   background: ${({ $type }) => ($type === 'error' ? '#FEEBEA' : '#EBF9F1')};
@@ -20,15 +21,14 @@ const Wrapper = styled(ContainerFlexBeetween)<RenderType>`
   color: #363636;
 
   ${Media.MD} {
-    top: 63px;
+    top: -63px;
     min-width: 700px;
-    width: 85%;
+    width: 100%;
     padding: 27px 19px;
   }
 
   ${Media.SM} {
-    top: 45px;
-    width: 100%;
+    top: -40px;
     min-width: 280px;
     padding: 12px 19px;
     font-size: 14px;
