@@ -1,17 +1,21 @@
-import { BreadcrumbsContent, StyledBreadcrumbs, Text } from './styles';
+import { useLocation } from 'react-router-dom';
 
-interface IProps {
-  crumbs: { category: string; booksName: string };
-}
+import { ROUTE } from '../../routes/routes';
 
-export const Breadcrumbs = ({ crumbs }: IProps) => {
-  const { category, booksName } = crumbs;
+import { BreadcrumbsContent, StyledBreadcrumbs, StyledLink, Text } from './styles';
+
+export const Breadcrumbs = () => {
+  const { state } = useLocation();
 
   return (
     <StyledBreadcrumbs>
       <BreadcrumbsContent>
+        <StyledLink to={`${ROUTE.BOOKS}/${state.path}`}>
+          <p data-test-id='breadcrumbs-link'>{state?.category ? state.category : 'Все книги'}</p>
+        </StyledLink>
+        <Text> / </Text>
         <Text>
-          {category ? category : 'Все книги'} / {booksName}
+          <p data-test-id='book-name'>{state.booksName}</p>
         </Text>
       </BreadcrumbsContent>
     </StyledBreadcrumbs>

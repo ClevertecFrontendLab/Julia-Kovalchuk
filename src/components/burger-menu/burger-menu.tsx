@@ -46,9 +46,9 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
               onClick={handleBurgerView}
               type='tertiary'
               key={uuidv4()}
-              state={{ from: name }}
+              state={{ name, path }}
             >
-              <p>
+              <p data-test-id={`burger-${path}`}>
                 {name}
                 {/* <Amount>{amount}</Amount> */}
               </p>

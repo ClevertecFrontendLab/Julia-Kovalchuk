@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
-import { CloseIcon, ColumnIcon, SearchIcon, SortIcon, SquareIcon } from '../../assets';
+import { CloseIcon, ColumnIcon, SearchIcon, SortIconDown, SortIconUp, SquareIcon } from '../../assets';
 import { useViewContext } from '../../context/button-view-context/button-view-context';
 import { useWindowSize } from '../../hooks/use-window-size';
-import { Breackpoint } from '../../ui/media';
+import { changeSortType, sortRenderedBooks } from '../../store/feautures/all-books-slice';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 
 import {
   ButtonColumn,
@@ -13,10 +15,8 @@ import {
   Search,
   SearchButton,
   SearchInput,
-  SelectOption,
   SortIconContainer,
   StyledNavigation,
-  StyledSelect,
   Text,
   WrapperInputs,
   WrapperSorting,
@@ -26,6 +26,8 @@ export const Navigation = () => {
   const { width = 0 } = useWindowSize();
   const { view, setView } = useViewContext();
   const [isOpen, setIsopen] = useState(false);
+  const { sortType } = useAppSelector(getAllBooks);
+  const dispatch = useAppDispatch();
 
   const handleSquareView = () => {
     setView(view);
@@ -37,6 +39,11 @@ export const Navigation = () => {
 
   const handleSearchView = () => {
     setIsopen(!isOpen);
+  };
+
+  const handleSort = () => {
+    dispatch(changeSortType());
+    dispatch(sortRenderedBooks());
   };
 
   return (
@@ -54,21 +61,9 @@ export const Navigation = () => {
         </SearchButton>
 
         {!isOpen && (
-          <Filter>
-            <SortIconContainer>
-              <SortIcon />
-            </SortIconContainer>
-            <StyledSelect name='sort' id='sort-select'>
-              <SelectOption value='rating' selected={width > Breackpoint.SM}>
-                <Text>По рейтингу</Text>
-              </SelectOption>
-              <SelectOption value='date'>
-                <Text>По дате</Text>
-              </SelectOption>
-              <SelectOption value='price'>
-                <Text>По цене</Text>
-              </SelectOption>
-            </StyledSelect>
+          <Filter type='button' onClick={handleSort} data-test-id='sort-rating-button'>
+            <SortIconContainer>{sortType === 'down' ? <SortIconDown /> : <SortIconUp />}</SortIconContainer>
+            <Text>По рейтингу</Text>
           </Filter>
         )}
       </WrapperInputs>

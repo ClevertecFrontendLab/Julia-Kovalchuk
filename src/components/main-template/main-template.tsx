@@ -9,11 +9,13 @@ import { getCategories } from '../../store/selectors/categories-selector';
 import { Footer, Header, Loader, MessageWindow } from '..';
 
 import { StyledMainTemplate, StyledOutlet } from './styles';
+import { fetchAllBooks } from '../../store/feautures/all-books-slice';
 
 export const MainTemplate = () => {
   const dispatch = useAppDispatch();
+
   // const { isCategoriesLoading, errorCategories } = useAppSelector(getCategories);
-  // const { isLoading, error } = useAppSelector(getAllBooks);
+  // const { isLoading, error, allBooks } = useAppSelector(getAllBooks);
 
   useEffect(() => {
     dispatch(fetchCategories());

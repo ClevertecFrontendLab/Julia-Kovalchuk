@@ -109,3 +109,5 @@ export interface IBookInfo {
   delivery: null | IDelivery;
   histories: null | IHistoryInfo[];
 }
+
+export type SortType = 'down' | 'up';

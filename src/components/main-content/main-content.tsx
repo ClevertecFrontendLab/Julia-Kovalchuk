@@ -11,7 +11,7 @@ import { StyledLineBooksContent, StyledSquareBooksContent } from './styles';
 
 export const MainContent = () => {
   const { view } = useViewContext();
-  const { allBooks } = useAppSelector(getAllBooks);
+  const { renderedBooks } = useAppSelector(getAllBooks);
   const { state } = useLocation();
 
   const { isSquare } = view;
@@ -21,11 +21,15 @@ export const MainContent = () => {
     <React.Fragment>
       {isColumn && (
         <StyledLineBooksContent>
-          {allBooks.map((book) => (
+          {renderedBooks.map((book) => (
             <Link
-              to={`/${ROUTE.DETAILS}${book.id}`}
+              to={`${ROUTE.BOOKS}/${state && state?.value.path !== null ? state.value.path : 'all'}/${book.id}`}
               key={book.id}
-              state={{ category: state?.from, booksName: book.title }}
+              state={{
+                category: state && state?.value.name !== null ? state.value.name : 'Все книги',
+                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.ALLBOOKS}`,
+                booksName: book.title,
+              }}
             >
               <LineBookCard book={book} />
             </Link>
@@ -35,11 +39,15 @@ export const MainContent = () => {
 
       {isSquare && (
         <StyledSquareBooksContent>
-          {allBooks.map((book) => (
+          {renderedBooks.map((book) => (
             <Link
-              to={`/${ROUTE.DETAILS}${book.id}`}
+              to={`${ROUTE.CATEGORY}/${state && state?.value.path !== null ? state.value.path : 'all'}/${book.id}`}
               key={book.id}
-              state={{ category: state?.from, booksName: book.title }}
+              state={{
+                category: state && state?.value.name !== null ? state.value.name : 'Все книги',
+                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.ALLBOOKS}`,
+                booksName: book.title,
+              }}
             >
               <SquareBookCard book={book} />
             </Link>

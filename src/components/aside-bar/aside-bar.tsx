@@ -25,7 +25,7 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
     <Wrapper>
       <div>
         <ButtonHide type='button' onClick={handleCategoryView} data-test-id='navigation-showcase'>
-          <CustomAsidelink to={ROUTE.HOME} type='secondary'>
+          <CustomAsidelink to={ROUTE.ALLBOOKS} type={isOpen ? 'fourth' : 'secondary'}>
             <ContainerLink>
               <div>Витрина книг</div>
               {!errorCategories &&
@@ -37,12 +37,12 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
 
         {!errorCategories && !error && (
           <CategoryBox $isOpen={isOpen}>
-            <CustomAsidelink to='' type='primary'>
+            <CustomAsidelink to={ROUTE.ALLBOOKS} type='tertiary'>
               <div data-test-id='navigation-books'>Все книги</div>
             </CustomAsidelink>
             {categories.map(({ name, path }) => (
-              <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ from: name }}>
-                <p>
+              <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ name, path }}>
+                <p data-test-id={`navigation-${path}`}>
                   {name}
                   {/* <Amount>{amount}</Amount> */}
                 </p>

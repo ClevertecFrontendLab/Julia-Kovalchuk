@@ -14,7 +14,8 @@ import { ReactComponent as LogoNameIcon } from './icons/name-logo.svg';
 import { ReactComponent as NoImageIcon } from './icons/no-image-icon.svg';
 import { ReactComponent as PaintedStarIcon } from './icons/painted-star-icon.svg';
 import { ReactComponent as SearchIcon } from './icons/search-icon.svg';
-import { ReactComponent as SortIcon } from './icons/sort-icon.svg';
+import { ReactComponent as SortIconDown } from './icons/sort-icon-down.svg';
+import { ReactComponent as SortIconUp } from './icons/sort-icon-up.svg';
 import { ReactComponent as SquareIcon } from './icons/square-icon.svg';
 import { ReactComponent as StarIcon } from './icons/star-icon.svg';
 import { ReactComponent as SuccessIcon } from './icons/success-icon.svg';
@@ -34,7 +35,7 @@ export {
   StarIcon,
   PaintedStarIcon,
   NoImageIcon,
-  SortIcon,
+  SortIconDown,
   ArrowDownIcon,
   ArrowUpIcon,
   CloseIcon,
@@ -42,4 +43,5 @@ export {
   ErrorIcon,
   SuccessIcon,
   Close,
+  SortIconUp,
 };

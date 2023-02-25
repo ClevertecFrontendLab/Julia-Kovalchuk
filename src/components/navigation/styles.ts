@@ -48,7 +48,11 @@ const Search = styled(ContainerFlex)<isOpen>`
   }
 `;
 
-const Filter = styled(ContainerFlex)`
+const Filter = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 8px;
   padding: 8px 15px;
   box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
     0px 1px 5px rgba(191, 196, 201, 0.24);
@@ -117,51 +121,22 @@ const ButtonColumn = styled.button<{ $isColumn: boolean }>`
   border-radius: 50%;
 `;
 
-const StyledSelect = styled.select`
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  letter-spacing: 0.1px;
-  color: #a7a7a7;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  &::-ms-expands {
-    display: none;
-  }
-
-  ${Media.SM} {
-    max-width: 1px;
-    visibility: hidden;
-  }
-`;
-const SelectOption = styled.option`
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-family: 'Montserrat';
-  letter-spacing: 0.1px;
-  color: #a7a7a7;
-`;
-
 const SortIconContainer = styled(ContainerFlex)`
   width: 100%;
   height: 100%;
-  margin-right: 8px;
-
-  ${Media.SM} {
-    margin-right: 0px;
-  }
 `;
 
 const Text = styled.p`
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  font-family: 'Montserrat';
   letter-spacing: 0.1px;
   color: #a7a7a7;
+  white-space: nowrap;
+
+  ${Media.SM} {
+    display: none;
+  }
 `;
 
 export {
@@ -174,8 +149,6 @@ export {
   SearchInput,
   ButtonSquare,
   ButtonColumn,
-  StyledSelect,
-  SelectOption,
   Text,
   SortIconContainer,
   CloseButton,

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Media } from '../../ui/media';
@@ -31,6 +32,22 @@ const BreadcrumbsContent = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  color: #a7a7a7;
+
+  ${Media.MD} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  ${Media.SM} {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+  }
+`;
+
 const Text = styled.p`
   color: #a7a7a7;
 
@@ -47,4 +64,4 @@ const Text = styled.p`
   }
 `;
 
-export { StyledBreadcrumbs, BreadcrumbsContent, Text };
+export { StyledBreadcrumbs, BreadcrumbsContent, Text, StyledLink };
