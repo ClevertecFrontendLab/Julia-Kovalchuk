@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { ContainerFlex } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
 const StyledBreadcrumbs = styled.div`
@@ -18,7 +19,7 @@ const StyledBreadcrumbs = styled.div`
   }
 `;
 
-const BreadcrumbsContent = styled.div`
+const BreadcrumbsContent = styled(ContainerFlex)`
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;

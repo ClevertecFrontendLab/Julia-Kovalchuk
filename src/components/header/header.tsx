@@ -30,7 +30,7 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Link to={ROUTE.ALLBOOKS}>
+      <Link to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`}>
         <LogoContainer>
           <Box>
             <LogoIcon />

@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { Fonts } from './fonts';
 import { Reset } from './reset';
 
 export const GlobalStyle = createGlobalStyle`
 
 ${Reset}
+${Fonts}
 
 body {
   height: 100%;

@@ -7,7 +7,7 @@ import { useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { LineBookCard, SquareBookCard } from '..';
 
-import { StyledLineBooksContent, StyledSquareBooksContent } from './styles';
+import { NoBooksText, StyledLineBooksContent, StyledSquareBooksContent } from './styles';
 
 export const MainContent = () => {
   const { view } = useViewContext();
@@ -17,7 +17,7 @@ export const MainContent = () => {
   const { isSquare } = view;
   const { isColumn } = view;
 
-  return (
+  return renderedBooks.length > 0 ? (
     <React.Fragment>
       {isColumn && (
         <StyledLineBooksContent>
@@ -27,7 +27,7 @@ export const MainContent = () => {
               key={book.id}
               state={{
                 category: state && state?.value.name !== null ? state.value.name : 'Все книги',
-                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.ALLBOOKS}`,
+                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`,
                 booksName: book.title,
               }}
             >
@@ -45,7 +45,7 @@ export const MainContent = () => {
               key={book.id}
               state={{
                 category: state && state?.value.name !== null ? state.value.name : 'Все книги',
-                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.ALLBOOKS}`,
+                path: state && state?.value.path !== null ? state.value.path : `${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`,
                 booksName: book.title,
               }}
             >
@@ -55,5 +55,7 @@ export const MainContent = () => {
         </StyledSquareBooksContent>
       )}
     </React.Fragment>
+  ) : (
+    <NoBooksText data-test-id='empty-category'>В этой категории книг ещё нет</NoBooksText>
   );
 };

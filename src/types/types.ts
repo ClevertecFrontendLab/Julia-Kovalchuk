@@ -111,3 +111,7 @@ export interface IBookInfo {
 }
 
 export type SortType = 'down' | 'up';
+
+export interface ICategoryAmount {
+  [key: string]: number;
+}

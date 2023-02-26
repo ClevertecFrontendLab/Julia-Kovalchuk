@@ -4,6 +4,7 @@ import { ContainerFlexColumn } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
 type $isOpen = { $isOpen: boolean };
+type $isActive = { $isActive: boolean };
 
 const Wrapper = styled(ContainerFlexColumn)`
   grid-gap: 42px;
@@ -24,12 +25,13 @@ const CategoryBox = styled(ContainerFlexColumn)<$isOpen>`
   padding-top: 16px;
 `;
 
-const Amount = styled.span`
+const Amount = styled.span<$isActive>`
   padding-left: 6px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: #a7a7a7;
+  color: ${({ $isActive }) => ($isActive ? '#363636' : '#a7a7a7')};
+  font-weight: 400;
 `;
 
 const ButtonHide = styled.button`

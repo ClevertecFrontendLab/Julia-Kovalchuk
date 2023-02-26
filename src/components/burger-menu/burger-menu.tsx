@@ -1,12 +1,16 @@
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
-import { useAppSelector } from '../../store/hooks/hooks';
+import { fetchAllBooks, sortByCategory } from '../../store/feautures/all-books-slice';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
 import { CustomAsidelink } from '../custom-aside-link/custom-aside-link';
 
-import { ButtonHide, CategoryBox, Container, ContainerLink, ProfileContainer, Wrapper } from './styles';
+import { Amount, ButtonHide, CategoryBox, Container, ContainerLink, ProfileContainer, Wrapper } from './styles';
 
 interface IProps {
   isOpen: boolean;
@@ -18,11 +22,24 @@ interface IProps {
 
 export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategoryView, isOpenCategory }: IProps) => {
   const { categories } = useAppSelector(getCategories);
+  const { categoriesAmount } = useAppSelector(getAllBooks);
+  const currentPath = useParams();
+  const dispatch = useAppDispatch();
 
   const handleClick = () => {
     handleView();
     handleBurgerView();
   };
+
+  useEffect(() => {
+    const categoryName = categories.find((category) => category.path === currentPath.category)?.name;
+
+    if (categoryName) {
+      dispatch(sortByCategory(categoryName));
+    } else {
+      dispatch(fetchAllBooks());
+    }
+  }, [categories, currentPath, dispatch]);
 
   return (
     <Wrapper $isOpen={isOpen}>
@@ -37,7 +54,7 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
         </ButtonHide>
 
         <CategoryBox $isOpen={isOpenCategory}>
-          <CustomAsidelink to={ROUTE.BOOKS} type='primary'>
+          <CustomAsidelink to={ROUTE.BOOKS} type='primary' state={{ name: 'Все книги', path: 'all' }}>
             <div data-test-id='burger-books'>Все книги</div>
           </CustomAsidelink>
           {categories.map(({ name, path }) => (
@@ -48,10 +65,10 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
               key={uuidv4()}
               state={{ name, path }}
             >
-              <p data-test-id={`burger-${path}`}>
-                {name}
-                {/* <Amount>{amount}</Amount> */}
-              </p>
+              <p data-test-id={`burger-${path}`}>{name}</p>
+              <Amount data-test-id={`burger-book-count-for-${path}`}>
+                {categoriesAmount[name] ? categoriesAmount[name] : 0}
+              </Amount>
             </CustomAsidelink>
           ))}
         </CategoryBox>

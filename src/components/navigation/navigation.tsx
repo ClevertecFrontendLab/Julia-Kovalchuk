@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { CloseIcon, ColumnIcon, SearchIcon, SortIconDown, SortIconUp, SquareIcon } from '../../assets';
 import { useViewContext } from '../../context/button-view-context/button-view-context';
 import { useWindowSize } from '../../hooks/use-window-size';
-import { changeSortType, sortRenderedBooks } from '../../store/feautures/all-books-slice';
+import { changeSortType, sortBySortType } from '../../store/feautures/all-books-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 
@@ -26,6 +26,7 @@ export const Navigation = () => {
   const { width = 0 } = useWindowSize();
   const { view, setView } = useViewContext();
   const [isOpen, setIsopen] = useState(false);
+  const [isActiveInput, setActiveInput] = useState(false);
   const { sortType } = useAppSelector(getAllBooks);
   const dispatch = useAppDispatch();
 
@@ -43,22 +44,36 @@ export const Navigation = () => {
 
   const handleSort = () => {
     dispatch(changeSortType());
-    dispatch(sortRenderedBooks());
+    dispatch(sortBySortType());
+  };
+
+  const handleActive = () => {
+    setActiveInput(true);
+  };
+
+  const handleBlur = () => {
+    setActiveInput(false);
   };
 
   return (
     <StyledNavigation>
       <WrapperInputs $isOpen={isOpen}>
         <Search $isOpen={isOpen}>
-          <SearchInput placeholder='Поиск книги или автора…' type='text' data-test-id='input-search' $isOpen={isOpen} />
+          <SearchButton type='button' data-test-id='button-search-open' $isOpen={isOpen} $isActiveInput={isActiveInput}>
+            <SearchIcon />
+          </SearchButton>
+          <SearchInput
+            placeholder='Поиск книги или автора…'
+            type='text'
+            data-test-id='input-search'
+            $isOpen={isOpen}
+            onFocus={handleActive}
+            onBlur={handleBlur}
+          />
           <CloseButton type='button' onClick={handleSearchView} data-test-id='button-search-close' $isOpen={isOpen}>
             <CloseIcon />
           </CloseButton>
         </Search>
-
-        <SearchButton type='button' onClick={handleSearchView} data-test-id='button-search-open' $isOpen={isOpen}>
-          <SearchIcon />
-        </SearchButton>
 
         {!isOpen && (
           <Filter type='button' onClick={handleSort} data-test-id='sort-rating-button'>
