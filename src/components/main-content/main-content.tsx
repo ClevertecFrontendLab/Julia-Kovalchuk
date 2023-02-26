@@ -47,7 +47,7 @@ export const MainContent = () => {
         <StyledSquareBooksContent>
           {curentBooks.map((book) => (
             <Link
-              to={`${ROUTE.CATEGORY}/${state && state?.value.path !== null ? state.value.path : 'all'}/${book.id}`}
+              to={`${ROUTE.BOOKS}/${state && state?.value.path !== null ? state.value.path : 'all'}/${book.id}`}
               key={book.id}
               state={{
                 category: state && state?.value.name !== null ? state.value.name : 'Все книги',
