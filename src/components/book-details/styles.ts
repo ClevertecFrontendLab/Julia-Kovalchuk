@@ -7,7 +7,7 @@ import { SecondarySmallTitle, Text } from '../../ui/typography';
 const StyledBookDetails = styled.div`
   display: flex;
   grid-gap: 30px;
-  margin-top: 86px;
+  margin-top: 96px;
 
   ${Media.MD} {
     position: relative;

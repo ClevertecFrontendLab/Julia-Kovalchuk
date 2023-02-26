@@ -50,7 +50,7 @@ export const BookDetails = ({ book }: IProps) => {
         </WrapperImage>
 
         <WrapperContent>
-          <Title>{title}</Title>
+          <Title data-test-id='book-title'>{title}</Title>
 
           <Author>
             {authors && <WrapperText>{authors?.join(', ')}, </WrapperText>}

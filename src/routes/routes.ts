@@ -3,7 +3,8 @@ export enum ROUTE {
   OFFER = '/offer',
   RULES = '/rules',
   BOOKS = '/books',
-  CATEGORY = '/books/:categoty',
+  ALLBOOKS = '/all',
+  CATEGORY = '/books/:category',
   PROFILE = '/profile',
   DETAILS = 'books/all/',
 }

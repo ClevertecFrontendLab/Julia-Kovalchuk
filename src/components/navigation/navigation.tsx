@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { CloseIcon, ColumnIcon, SearchIcon, SortIcon, SquareIcon } from '../../assets';
+import { CloseIcon, ColumnIcon, SearchIcon, SortIconDown, SortIconUp, SquareIcon } from '../../assets';
 import { useViewContext } from '../../context/button-view-context/button-view-context';
+import { useInput } from '../../hooks/use-input';
 import { useWindowSize } from '../../hooks/use-window-size';
-import { Breackpoint } from '../../ui/media';
+import { changeSortType, sortBySortType, updateSearchValue } from '../../store/feautures/all-books-slice';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 
 import {
   ButtonColumn,
@@ -13,10 +16,8 @@ import {
   Search,
   SearchButton,
   SearchInput,
-  SelectOption,
   SortIconContainer,
   StyledNavigation,
-  StyledSelect,
   Text,
   WrapperInputs,
   WrapperSorting,
@@ -26,6 +27,11 @@ export const Navigation = () => {
   const { width = 0 } = useWindowSize();
   const { view, setView } = useViewContext();
   const [isOpen, setIsopen] = useState(false);
+  const [isActiveInput, setActiveInput] = useState(false);
+  const { inputValue, onChange } = useInput();
+
+  const { sortType, searchValue } = useAppSelector(getAllBooks);
+  const dispatch = useAppDispatch();
 
   const handleSquareView = () => {
     setView(view);
@@ -39,36 +45,55 @@ export const Navigation = () => {
     setIsopen(!isOpen);
   };
 
+  const handleSort = () => {
+    dispatch(changeSortType());
+    dispatch(sortBySortType());
+  };
+
+  const handleActive = () => {
+    setActiveInput(true);
+  };
+
+  const handleBlur = () => {
+    setActiveInput(false);
+  };
+
+  useEffect(() => {
+    dispatch(updateSearchValue(inputValue));
+  }, [dispatch, inputValue]);
+
   return (
     <StyledNavigation>
       <WrapperInputs $isOpen={isOpen}>
         <Search $isOpen={isOpen}>
-          <SearchInput placeholder='Поиск книги или автора…' type='text' data-test-id='input-search' $isOpen={isOpen} />
+          <SearchButton
+            type='button'
+            data-test-id='button-search-open'
+            $isOpen={isOpen}
+            $isActiveInput={isActiveInput}
+            onClick={handleSearchView}
+          >
+            <SearchIcon />
+          </SearchButton>
+          <SearchInput
+            placeholder='Поиск книги или автора…'
+            type='text'
+            data-test-id='input-search'
+            $isOpen={isOpen}
+            onFocus={handleActive}
+            onBlur={handleBlur}
+            value={inputValue}
+            onChange={onChange}
+          />
           <CloseButton type='button' onClick={handleSearchView} data-test-id='button-search-close' $isOpen={isOpen}>
             <CloseIcon />
           </CloseButton>
         </Search>
 
-        <SearchButton type='button' onClick={handleSearchView} data-test-id='button-search-open' $isOpen={isOpen}>
-          <SearchIcon />
-        </SearchButton>
-
         {!isOpen && (
-          <Filter>
-            <SortIconContainer>
-              <SortIcon />
-            </SortIconContainer>
-            <StyledSelect name='sort' id='sort-select'>
-              <SelectOption value='rating' selected={width > Breackpoint.SM}>
-                <Text>По рейтингу</Text>
-              </SelectOption>
-              <SelectOption value='date'>
-                <Text>По дате</Text>
-              </SelectOption>
-              <SelectOption value='price'>
-                <Text>По цене</Text>
-              </SelectOption>
-            </StyledSelect>
+          <Filter type='button' onClick={handleSort} data-test-id='sort-rating-button'>
+            <SortIconContainer>{sortType === 'down' ? <SortIconDown /> : <SortIconUp />}</SortIconContainer>
+            <Text>По рейтингу</Text>
           </Filter>
         )}
       </WrapperInputs>

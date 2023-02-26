@@ -5,7 +5,7 @@ import { Media } from '../../ui/media';
 
 const Wrapper = styled(ContainerFlex)`
   position: relative;
-
+  align-items: start;
   width: 1110px;
   max-width: 1100px;
   margin: 0px auto;

@@ -1,14 +1,16 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
-import { useAppSelector } from '../../store/hooks/hooks';
+import { fetchAllBooks, searchBooks, sortByCategory } from '../../store/feautures/all-books-slice';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
 import { CustomAsidelink } from '../custom-aside-link/custom-aside-link';
 
-import { ButtonHide, CategoryBox, ContainerLink, Wrapper } from './styles';
+import { Amount, ButtonHide, CategoryBox, ContainerLink, Wrapper } from './styles';
 
 interface IProps {
   isOpen: boolean;
@@ -20,12 +22,25 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
   const { categories } = useAppSelector(getCategories);
   const { errorCategories } = useAppSelector(getCategories);
   const { error } = useAppSelector(getAllBooks);
+  const { categoriesAmount } = useAppSelector(getAllBooks);
+  const currentPath = useParams();
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    const categoryName = categories.find((category) => category.path === currentPath.category)?.name;
+
+    if (categoryName) {
+      dispatch(sortByCategory(categoryName));
+    } else if (currentPath.category === 'all') {
+      dispatch(fetchAllBooks());
+    }
+  }, [categories, currentPath, dispatch]);
 
   return (
     <Wrapper>
       <div>
         <ButtonHide type='button' onClick={handleCategoryView} data-test-id='navigation-showcase'>
-          <CustomAsidelink to={ROUTE.HOME} type='secondary'>
+          <CustomAsidelink to='' type={isOpen ? 'fourth' : 'secondary'} state={{ name: 'Все книги', path: 'all' }}>
             <ContainerLink>
               <div>Витрина книг</div>
               {!errorCategories &&
@@ -37,15 +52,19 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
 
         {!errorCategories && !error && (
           <CategoryBox $isOpen={isOpen}>
-            <CustomAsidelink to='' type='primary'>
+            <CustomAsidelink
+              to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`}
+              type='tertiary'
+              state={{ name: 'Все книги', path: 'all' }}
+            >
               <div data-test-id='navigation-books'>Все книги</div>
             </CustomAsidelink>
             {categories.map(({ name, path }) => (
-              <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ from: name }}>
-                <p>
-                  {name}
-                  {/* <Amount>{amount}</Amount> */}
-                </p>
+              <CustomAsidelink to={`${ROUTE.BOOKS}/${path}`} type='tertiary' key={uuidv4()} state={{ name, path }}>
+                <p data-test-id={`navigation-${path}`}>{name}</p>
+                <Amount $isActive={currentPath.category === path} data-test-id={`navigation-book-count-for-${path}`}>
+                  {categoriesAmount[name] ? categoriesAmount[name] : 0}
+                </Amount>
               </CustomAsidelink>
             ))}
           </CategoryBox>

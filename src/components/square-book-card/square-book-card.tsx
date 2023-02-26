@@ -1,6 +1,14 @@
+/* eslint-disable react/no-unstable-nested-components */
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+
+import { useCallback } from 'react';
+
 import { NoImageIcon } from '../../assets';
+import { useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { IBookShortInfo } from '../../types/types';
-import { ButtonOccupied, ButtonOccupiedUntil, PrimaryButton, Stars } from '..';
+import { ButtonOccupied, ButtonOccupiedUntil, Hightlight, PrimaryButton, Stars } from '..';
 
 import {
   Image,
@@ -20,6 +28,9 @@ interface IProps {
 
 export const SquareBookCard = ({ book }: IProps) => {
   const { image, issueYear, authors, title, rating, booking } = book;
+  const { searchValue } = useAppSelector(getAllBooks);
+
+  const highlightText = useCallback((str: string) => <Hightlight filter={searchValue} str={str} />, [searchValue]);
 
   return (
     <StyledSquareBookCard data-test-id='card'>
@@ -36,7 +47,7 @@ export const SquareBookCard = ({ book }: IProps) => {
       <Stars rating={rating} gap={6} />
 
       <WrapperTitle>
-        <Title>{title}</Title>
+        <Title>{highlightText(title)}</Title>
       </WrapperTitle>
 
       <SubTitle>
