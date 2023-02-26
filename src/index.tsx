@@ -26,7 +26,6 @@ root.render(
                 <Route path={ROUTE.OFFER} element={<ContractPage content='offer' />} />
                 <Route path={ROUTE.RULES} element={<ContractPage content='rules' />} />
                 <Route path={ROUTE.CATEGORY} element={<MainPage />} />
-                {/* <Route path={ROUTE.BOOKS} element={<MainPage />} /> */}
               </Route>
             </Route>
           </Routes>
