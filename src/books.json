@@ -1,0 +1,2411 @@
+{
+  "business": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg", "https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg", "https://igromaster.by/upload/iblock/447/4475240a070ae132b54e8557ad6ea365.webp?1582304419", "https://igromaster.by/upload/iblock/447/4475240a070ae132b54e8557ad6ea365.webp?1582304419", "https://igromaster.by/upload/iblock/447/4475240a070ae132b54e8557ad6ea365.webp?1582304419", "https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg", "https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "detective": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "children": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+
+  "foreign": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "history": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "classic": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "psychology": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "computers": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "culture": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "science": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "publicistic": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "references": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "scifi": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ],
+  "humor": [
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29",
+      "comments": [
+        {
+          "reviewerName": "Екатерина Белева",
+          "reviewerAvatar": "",
+          "review":
+            "Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект не оставляет шанса для анализа существующих паттернов поведения. Для современного мира внедрение современных методик предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы будут в равной степени предоставлены сами себе. Вот вам яркий пример современных тенденций — глубокий уровень погружения создаёт предпосылки для своевременного выполнения сверхзадачи. И нет сомнений, что акционеры крупнейших компаний, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
+          "stars": 4,
+          "date": "5 января 2023"
+        },
+        {
+          "reviewerName": "Алекс Белый",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 3,
+          "date": "21 июня 2022"
+        },
+        {
+          "reviewerName": "Наталья Иванова",
+          "reviewerAvatar": "",
+          "review": "",
+          "stars": 1,
+          "date": "13 января 2021"
+        }
+      ]
+    },
+    {
+      "id": "63ca7627549c20ea76acb8fc",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 5,
+      "year": 1998,
+      "isBooked": true,
+      "bookedTill": "2024-10-02T10:46:09 -03:00",
+      "publishing": "Питер",
+      "pages": "200",
+      "binding": "мягкая обложка",
+      "format": "70х100",
+      "weight": "370 г",
+      "ISBN": "978-5-4461-0923-4",
+      "manufacturer": "ООО «Питер Мейл». РФ, 198 206, г. Санкт-Петербург, Петергофское ш, д. 73, лит. А29"
+    },
+    {
+      "id": "63ca762761ae79531f1acb53",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1975,
+      "isBooked": true,
+      "bookedTill": "2023-10-24T02:17:44 -03:00"
+    },
+    {
+      "id": "63ca7627eab55a2591cefaac",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ced7f0492e6015bc67a1e98dea21e1aaf43d097-5588836-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы.",
+      "rating": 1,
+      "year": 1929,
+      "isBooked": false,
+      "bookedTill": "2024-04-10T06:34:58 -03:00"
+    },
+    {
+      "id": "63ca7627db47f2a9cf5abfee",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие.",
+      "rating": "",
+      "year": 1983,
+      "isBooked": false,
+      "bookedTill": "2023-03-20T03:19:53 -03:00"
+    },
+    {
+      "id": "63ca76278e7bae49e60cc08f",
+      "image": ["https://avatars.mds.yandex.net/i?id=4ec7a519ca1cbc76064a4bf40e9dd089964966bf-7662942-images-thumbs&n=13"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 2014,
+      "isBooked": false,
+      "bookedTill": "2024-01-15T10:49:49 -03:00"
+    },
+    {
+      "id": "63ca76277acbfd2757ff0e87",
+      "image": [],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 4,
+      "year": 1970,
+      "isBooked": false,
+      "bookedTill": "2024-01-26T10:33:38 -03:00"
+    },
+    {
+      "id": "63ca76279b279b3f88322e2e",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1973,
+      "isBooked": false,
+      "bookedTill": "2024-12-19T10:48:58 -03:00"
+    },
+    {
+      "id": "63ca7627b50fe16d3ce08a55",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 3,
+      "year": 1971,
+      "isBooked": true,
+      "bookedTill": "2024-11-28T04:56:05 -03:00"
+    },
+    {
+      "id": "63ca76271344102600937710",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 2,
+      "year": 1903,
+      "isBooked": true,
+      "bookedTill": ""
+    },
+    {
+      "id": "63ca7627fc79a3d638fa2d2f",
+      "image": ["http://javascript.ru/files/book/cover/4a49c49ced114.png"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 1,
+      "year": 1992,
+      "isBooked": false,
+      "bookedTill": "2023-02-11T02:37:59 -03:00"
+    },
+    {
+      "id": "63ca762760bbd6f2e25b942c",
+      "image": ["https://uploads.sitepoint.com/wp-content/uploads/2017/03/1488480428eloquent-js.jpg"],
+      "category": "business",
+      "author": "Адитья Бхаргава, Патрик Нимейер",
+      "title": "Грокаем алгоритмы. Иллюстрированное пособие для программистов.",
+      "rating": 0,
+      "year": 1948,
+      "isBooked": true,
+      "bookedTill": "2024-11-18T11:57:21 -03:00"
+    }
+  ]
+}

@@ -7,8 +7,8 @@ export const ViewContext = createContext<IViewContext>({} as IViewContext);
 const useContextViewValue = () => {
   const [view, setView] = useState<IViewContext>({
     view: {
-      isColumn: true,
-      isSquare: false,
+      isColumn: false,
+      isSquare: true,
     },
     setView: () => {
       setView((context) => ({

@@ -9,8 +9,8 @@ type $isActive = { $isActive: boolean };
 const Wrapper = styled(ContainerFlexColumn)`
   grid-gap: 42px;
   align-self: flex-start;
-  width: 279px;
-  min-width: 279px;
+  width: 270px;
+  min-width: 270px;
   height: 75%;
   padding-bottom: 100px;
 

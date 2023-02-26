@@ -8,7 +8,7 @@ const StyledSquareBooksContent = styled.div`
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
-  grid-gap: 21.5px;
+  grid-gap: 20px;
 
   ${Media.MD} {
     grid-gap: 35px;
