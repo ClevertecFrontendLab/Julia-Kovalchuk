@@ -7,6 +7,7 @@ import { ButtonOccupied } from './button-occupied/button-occupied';
 import { ButtonOccupiedUntil } from './button-occupied-until/button-occupied-until';
 import { Footer } from './footer/footer';
 import { Header } from './header/header';
+import { Hightlight } from './hightlight/hightlight';
 import { LineBookCard } from './line-book-card/line-book-card';
 import { Loader } from './loader/loader';
 import { MainContent } from './main-content/main-content';
@@ -46,4 +47,5 @@ export {
   Slider,
   Loader,
   MessageWindow,
+  Hightlight,
 };

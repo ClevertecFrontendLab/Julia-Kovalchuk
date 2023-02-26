@@ -12,15 +12,19 @@ import { getCategoriesAmount } from '../../utils/get-categories-amount';
 interface IAllBooksState {
   allBooks: IBookShortInfo[];
   renderedBooks: IBookShortInfo[];
+  foundBooks: IBookShortInfo[];
   isLoading: boolean;
   error: null | string | undefined;
   sortType: SortType;
+  searchValue: string;
   categoriesAmount: ICategoryAmount;
 }
 
 const initialState: IAllBooksState = {
   allBooks: [],
   renderedBooks: [],
+  foundBooks: [],
+  searchValue: '',
   isLoading: false,
   error: null,
   sortType: 'down',
@@ -58,6 +62,17 @@ const allBooksSlice = createSlice({
     renderAllBooks(state) {
       state.renderedBooks = sortBooks(state.sortType, state.allBooks);
     },
+    updateSearchValue(state, { payload }: PayloadAction<string>) {
+      state.searchValue = payload;
+    },
+    searchBooks(state, { payload }: PayloadAction<string>) {
+      state.foundBooks = state.renderedBooks.filter((book) =>
+        book.title.toLocaleLowerCase().includes(payload.toLocaleLowerCase())
+      );
+    },
+    resetSearchBooks(state) {
+      state.foundBooks = [];
+    },
   },
   extraReducers(builder) {
     builder.addCase(fetchAllBooks.pending, (state) => {
@@ -80,4 +95,12 @@ const allBooksSlice = createSlice({
 export default allBooksSlice.reducer;
 export { fetchAllBooks };
 
-export const { changeSortType, sortBySortType, sortByCategory, renderAllBooks } = allBooksSlice.actions;
+export const {
+  changeSortType,
+  sortBySortType,
+  sortByCategory,
+  renderAllBooks,
+  updateSearchValue,
+  searchBooks,
+  resetSearchBooks,
+} = allBooksSlice.actions;

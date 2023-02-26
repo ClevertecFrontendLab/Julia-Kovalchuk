@@ -10,13 +10,11 @@ export const Breadcrumbs = () => {
   return (
     <StyledBreadcrumbs>
       <BreadcrumbsContent>
-        <StyledLink to={`${ROUTE.BOOKS}/${state.path}`}>
-          <p data-test-id='breadcrumbs-link'>{state?.category ? state.category : 'Все книги'}</p>
+        <StyledLink to={`${ROUTE.BOOKS}/${state.path}`} data-test-id='breadcrumbs-link'>
+          {state.category}
         </StyledLink>
         <Text> / </Text>
-        <Text>
-          <p data-test-id='book-name'>{state.booksName}</p>
-        </Text>
+        <Text data-test-id='book-name'>{state.booksName}</Text>
       </BreadcrumbsContent>
     </StyledBreadcrumbs>
   );

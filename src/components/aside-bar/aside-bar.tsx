@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
-import { fetchAllBooks, sortByCategory } from '../../store/feautures/all-books-slice';
+import { fetchAllBooks, searchBooks, sortByCategory } from '../../store/feautures/all-books-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
@@ -40,7 +40,7 @@ export const AsideBar = ({ isOpen, handleCategoryView, handleView }: IProps) => 
     <Wrapper>
       <div>
         <ButtonHide type='button' onClick={handleCategoryView} data-test-id='navigation-showcase'>
-          <CustomAsidelink to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`} type={isOpen ? 'fourth' : 'secondary'}>
+          <CustomAsidelink to='' type={isOpen ? 'fourth' : 'secondary'} state={{ name: 'Все книги', path: 'all' }}>
             <ContainerLink>
               <div>Витрина книг</div>
               {!errorCategories &&

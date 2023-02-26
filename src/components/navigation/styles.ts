@@ -91,7 +91,7 @@ const SearchInput = styled.input<isOpen>`
   border: none;
   color: #363636;
   width: 190px;
-  caret-color: #f83600;
+  caret-color: rgb(248, 54, 0);
 
   &::placeholder {
     color: #a7a7a7;

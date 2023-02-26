@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { CloseIcon, ColumnIcon, SearchIcon, SortIconDown, SortIconUp, SquareIcon } from '../../assets';
 import { useViewContext } from '../../context/button-view-context/button-view-context';
+import { useInput } from '../../hooks/use-input';
 import { useWindowSize } from '../../hooks/use-window-size';
-import { changeSortType, sortBySortType } from '../../store/feautures/all-books-slice';
+import { changeSortType, sortBySortType, updateSearchValue } from '../../store/feautures/all-books-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 
@@ -27,7 +28,9 @@ export const Navigation = () => {
   const { view, setView } = useViewContext();
   const [isOpen, setIsopen] = useState(false);
   const [isActiveInput, setActiveInput] = useState(false);
-  const { sortType } = useAppSelector(getAllBooks);
+  const { inputValue, onChange } = useInput();
+
+  const { sortType, searchValue } = useAppSelector(getAllBooks);
   const dispatch = useAppDispatch();
 
   const handleSquareView = () => {
@@ -55,11 +58,21 @@ export const Navigation = () => {
     setActiveInput(false);
   };
 
+  useEffect(() => {
+    dispatch(updateSearchValue(inputValue));
+  }, [dispatch, inputValue]);
+
   return (
     <StyledNavigation>
       <WrapperInputs $isOpen={isOpen}>
         <Search $isOpen={isOpen}>
-          <SearchButton type='button' data-test-id='button-search-open' $isOpen={isOpen} $isActiveInput={isActiveInput}>
+          <SearchButton
+            type='button'
+            data-test-id='button-search-open'
+            $isOpen={isOpen}
+            $isActiveInput={isActiveInput}
+            onClick={handleSearchView}
+          >
             <SearchIcon />
           </SearchButton>
           <SearchInput
@@ -69,6 +82,8 @@ export const Navigation = () => {
             $isOpen={isOpen}
             onFocus={handleActive}
             onBlur={handleBlur}
+            value={inputValue}
+            onChange={onChange}
           />
           <CloseButton type='button' onClick={handleSearchView} data-test-id='button-search-close' $isOpen={isOpen}>
             <CloseIcon />

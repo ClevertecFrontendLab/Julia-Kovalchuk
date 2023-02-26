@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
-import { fetchAllBooks, sortByCategory } from '../../store/feautures/all-books-slice';
+import { fetchAllBooks, searchBooks, sortByCategory } from '../../store/feautures/all-books-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
@@ -22,7 +22,7 @@ interface IProps {
 
 export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategoryView, isOpenCategory }: IProps) => {
   const { categories } = useAppSelector(getCategories);
-  const { categoriesAmount } = useAppSelector(getAllBooks);
+  const { categoriesAmount, searchValue } = useAppSelector(getAllBooks);
   const currentPath = useParams();
   const dispatch = useAppDispatch();
 
@@ -40,6 +40,10 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
       dispatch(fetchAllBooks());
     }
   }, [categories, currentPath, dispatch]);
+
+  useEffect(() => {
+    if (searchValue) dispatch(searchBooks(searchValue));
+  }, [dispatch, searchValue, currentPath]);
 
   return (
     <Wrapper $isOpen={isOpen}>

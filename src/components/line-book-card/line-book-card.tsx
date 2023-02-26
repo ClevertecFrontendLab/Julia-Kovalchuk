@@ -1,6 +1,10 @@
+import { useCallback } from 'react';
+
 import { NoImageIcon } from '../../assets';
+import { useAppSelector } from '../../store/hooks/hooks';
+import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { IBookShortInfo } from '../../types/types';
-import { ButtonOccupied, ButtonOccupiedUntil, PrimaryButton, Stars } from '..';
+import { ButtonOccupied, ButtonOccupiedUntil, Hightlight, PrimaryButton, Stars } from '..';
 
 import {
   Image,
@@ -20,6 +24,9 @@ interface IProps {
 
 export const LineBookCard = ({ book }: IProps) => {
   const { image, issueYear, authors, title, rating, booking } = book;
+  const { searchValue } = useAppSelector(getAllBooks);
+
+  const highlightText = useCallback((str: string) => <Hightlight filter={searchValue} str={str} />, [searchValue]);
 
   return (
     <StyledLineBookCard data-test-id='card'>
@@ -34,7 +41,7 @@ export const LineBookCard = ({ book }: IProps) => {
       </WrapperImage>
 
       <WrapperContent>
-        <Title>{title}</Title>
+        <Title>{highlightText(title)}</Title>
 
         <WrapperText>
           <Text>{authors?.join(', ')}, </Text>

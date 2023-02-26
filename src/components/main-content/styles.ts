@@ -44,4 +44,8 @@ const NoBooksText = styled.p`
   }
 `;
 
-export { StyledSquareBooksContent, StyledLineBooksContent, NoBooksText };
+const Match = styled.span`
+  color: #ff5253;
+`;
+
+export { StyledSquareBooksContent, StyledLineBooksContent, NoBooksText, Match };

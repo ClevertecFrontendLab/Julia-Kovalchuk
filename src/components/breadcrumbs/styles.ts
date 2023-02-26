@@ -23,6 +23,7 @@ const BreadcrumbsContent = styled(ContainerFlex)`
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
+  grid-gap: 5px;
 
   ${Media.MD} {
     padding-inline: 64px;
