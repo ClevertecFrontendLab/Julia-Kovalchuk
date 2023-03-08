@@ -1,11 +1,12 @@
 import axios from 'axios';
 
-import { IBookInfo, IBookShortInfo, ICategory } from '../types/types';
+import { IBookInfo, IBookShortInfo, ICategory, IRegisterResponse, IUserResponse, SignUpValues } from '../types/types';
 
 enum Endpoint {
   CATEGORIES = 'categories',
   ALLBOOKS = 'books',
   DETAILS = 'books/',
+  REGISTER = '/auth/local/register',
 }
 
 class BookAPI {
@@ -29,6 +30,12 @@ class BookAPI {
 
   public async getBookDetails(id: string) {
     const { data } = await this.API.get<IBookInfo>(`${Endpoint.DETAILS}${id}`);
+
+    return data;
+  }
+
+  public async signUp(userData: SignUpValues) {
+    const { data } = await this.API.post<IRegisterResponse>(`${Endpoint.REGISTER}`, userData);
 
     return data;
   }

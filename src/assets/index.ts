@@ -1,11 +1,15 @@
 import { ReactComponent as ArrowDownIcon } from './icons/arrow-down.svg';
+import { ReactComponent as ArrowLeftIcon } from './icons/arrow-left.svg';
 import { ReactComponent as ArrowUpIcon } from './icons/arrow-up.svg';
 import { ReactComponent as BurgerIcon } from './icons/burger-icon.svg';
+import { ReactComponent as CheckIcon } from './icons/check.svg';
 import { ReactComponent as Close } from './icons/close.svg';
 import { ReactComponent as CloseBurgerIcon } from './icons/close-burger-icon.svg';
 import { ReactComponent as CloseIcon } from './icons/close-icon.svg';
 import { ReactComponent as ColumnIcon } from './icons/column-icon.svg';
 import { ReactComponent as ErrorIcon } from './icons/error-icon.svg';
+import { ReactComponent as EyeIcon } from './icons/eye.svg';
+import { ReactComponent as EyeClosedIcon } from './icons/eye-closed.svg';
 import { ReactComponent as FacebookIcon } from './icons/facebook-icon.svg';
 import { ReactComponent as InstagramIcon } from './icons/instagram-icon.svg';
 import { ReactComponent as LinkedinIcon } from './icons/linkedin-icon.svg';
@@ -44,4 +48,8 @@ export {
   SuccessIcon,
   Close,
   SortIconUp,
+  ArrowLeftIcon,
+  EyeClosedIcon,
+  EyeIcon,
+  CheckIcon,
 };

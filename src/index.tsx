@@ -7,8 +7,8 @@ import { ViewContextProvider } from './context/button-view-context/button-view-c
 import { ROUTE } from './routes/routes';
 import { store } from './store/store';
 import { GlobalStyle } from './ui/global-styles';
-import { MainTemplate, SecondTemplate } from './components';
-import { BookPage, ContractPage, MainPage } from './pages';
+import { AuthTemplate, MainTemplate, RequareAuth, SecondTemplate } from './components';
+import { BookPage, ContractPage, MainPage, SignInPage, SignUpPage } from './pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -19,13 +19,24 @@ root.render(
         <GlobalStyle />
         <HashRouter>
           <Routes>
-            <Route path={ROUTE.HOME} element={<MainTemplate />}>
-              <Route path={`${ROUTE.CATEGORY}/:id`} element={<BookPage />} />
-              <Route path={ROUTE.HOME} element={<SecondTemplate />}>
-                <Route index={true} element={<MainPage />} />
-                <Route path={ROUTE.OFFER} element={<ContractPage content='offer' />} />
-                <Route path={ROUTE.RULES} element={<ContractPage content='rules' />} />
-                <Route path={ROUTE.CATEGORY} element={<MainPage />} />
+            <Route path={ROUTE.HOME} element={<AuthTemplate />}>
+              <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
+              <Route path={ROUTE.SIGN_IN} element={<SignInPage />} />
+
+              {/* <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
+               <Route path={ROUTE.RESSET_PASSWORD} element={<ResetPasswordPage />} />
+               <Route path={ROUTE.PIXEMA} element={<ReactPixemaPage />} /> */}
+            </Route>
+
+            <Route element={<RequareAuth />}>
+              <Route path={ROUTE.HOME} element={<MainTemplate />}>
+                <Route path={`${ROUTE.CATEGORY}/:id`} element={<BookPage />} />
+                <Route path={ROUTE.HOME} element={<SecondTemplate />}>
+                  <Route index={true} element={<MainPage />} />
+                  <Route path={ROUTE.OFFER} element={<ContractPage content='offer' />} />
+                  <Route path={ROUTE.RULES} element={<ContractPage content='rules' />} />
+                  <Route path={ROUTE.CATEGORY} element={<MainPage />} />
+                </Route>{' '}
               </Route>
             </Route>
           </Routes>

@@ -115,3 +115,41 @@ export type SortType = 'down' | 'up';
 export interface ICategoryAmount {
   [key: string]: number;
 }
+
+export type SignUpValues = {
+  email: string;
+  username: string;
+  password: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+};
+
+export interface IUserResponse {
+  id: number;
+  username: string;
+  email: string;
+  provider: string;
+  confirmed: boolean;
+  blocked: boolean;
+  createdAt: string;
+  updatedAt: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+}
+
+export interface IRegisterResponse {
+  jwt: string;
+  user: IUserResponse;
+}
+
+export interface IRegisterError {
+  data: null;
+  error: {
+    status: number;
+    name: string;
+    message: string;
+    details: any;
+  };
+}
