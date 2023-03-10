@@ -125,6 +125,11 @@ export type SignUpValues = {
   phone: string;
 };
 
+export type SignInValues = {
+  identifier: string;
+  password: string;
+};
+
 export interface IUserResponse {
   id: number;
   username: string;
@@ -152,4 +157,9 @@ export interface IRegisterError {
     message: string;
     details: any;
   };
+}
+
+export interface IAuthResponse {
+  jwt: string;
+  user: IUserResponse;
 }

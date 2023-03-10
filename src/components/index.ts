@@ -9,6 +9,7 @@ import { ButtonOccupiedUntil } from './button-occupied-until/button-occupied-unt
 import { Footer } from './footer/footer';
 import { FormInput } from './form-input/form-input';
 import { FormInputPhone } from './form-input-phone/form-input-phone';
+import { FormSignIn } from './form-sign-in/form-sign-in';
 import { FormSignUp } from './form-sign-up/form-sign-up';
 import { Header } from './header/header';
 import { Hightlight } from './hightlight/hightlight';
@@ -62,4 +63,5 @@ export {
   FormInput,
   FormInputPhone,
   ModalWindow,
+  FormSignIn,
 };

@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import allBooksReducer from './feautures/all-books-slice';
+import authReduser from './feautures/auth-slice';
 import bookReducer from './feautures/book-slice';
 import categoriesReducer from './feautures/categories-slice';
 import registerReduser from './feautures/register-slice';
@@ -11,6 +12,7 @@ const store = configureStore({
     allBooks: allBooksReducer,
     book: bookReducer,
     register: registerReduser,
+    auth: authReduser,
   },
 });
 

@@ -1,12 +1,21 @@
 import axios from 'axios';
 
-import { IBookInfo, IBookShortInfo, ICategory, IRegisterResponse, IUserResponse, SignUpValues } from '../types/types';
+import {
+  IAuthResponse,
+  IBookInfo,
+  IBookShortInfo,
+  ICategory,
+  IRegisterResponse,
+  SignInValues,
+  SignUpValues,
+} from '../types/types';
 
 enum Endpoint {
   CATEGORIES = 'categories',
   ALLBOOKS = 'books',
   DETAILS = 'books/',
   REGISTER = '/auth/local/register',
+  AUTH = '/auth/local',
 }
 
 class BookAPI {
@@ -16,26 +25,46 @@ class BookAPI {
     baseURL: this.BASE_URL,
   });
 
-  public async getCategories() {
-    const { data } = await this.API.get<ICategory[]>(Endpoint.CATEGORIES);
+  // private readonly token = localStorage.getItem('jwt');
+
+  public async getCategories(token: string) {
+    const { data } = await this.API.get<ICategory[]>(Endpoint.CATEGORIES, {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    });
 
     return data;
   }
 
-  public async getAllBooks() {
-    const { data } = await this.API.get<IBookShortInfo[]>(Endpoint.ALLBOOKS);
+  public async getAllBooks(token: string) {
+    const { data } = await this.API.get<IBookShortInfo[]>(Endpoint.ALLBOOKS, {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    });
 
     return data;
   }
 
-  public async getBookDetails(id: string) {
-    const { data } = await this.API.get<IBookInfo>(`${Endpoint.DETAILS}${id}`);
+  public async getBookDetails(id: string, token: string) {
+    const { data } = await this.API.get<IBookInfo>(`${Endpoint.DETAILS}${id}`, {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    });
 
     return data;
   }
 
   public async signUp(userData: SignUpValues) {
     const { data } = await this.API.post<IRegisterResponse>(`${Endpoint.REGISTER}`, userData);
+
+    return data;
+  }
+
+  public async signIn(userData: SignInValues) {
+    const { data } = await this.API.post<IAuthResponse>(`${Endpoint.AUTH}`, userData);
 
     return data;
   }

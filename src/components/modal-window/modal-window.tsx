@@ -2,8 +2,10 @@ import { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useWindowSize } from '../../hooks/use-window-size';
-import { clearError, setStep } from '../../store/feautures/register-slice';
+import { setAuthStep } from '../../store/feautures/auth-slice';
+import { clearError, setRegisterStep } from '../../store/feautures/register-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { signIn } from '../../store/selectors/auth-selector';
 import { signUp } from '../../store/selectors/register-selector';
 import { Breackpoint } from '../../ui/media';
 import { PrimaryButton } from '../primary-button/primary-button';
@@ -15,18 +17,21 @@ interface IProps {
   title: string;
   buttonTitle: string;
   children: ReactNode;
-  to: any;
+  to: string;
 }
 
 export const ModalWindow = ({ title, buttonTitle, children, to }: IProps) => {
   const { width = 0 } = useWindowSize();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-  const { step } = useAppSelector(signUp);
+  const { registerStep } = useAppSelector(signUp);
+  const { authStep } = useAppSelector(signIn);
 
   const handleClick = () => {
-    if (step === 'error') dispatch(setStep('1'));
-    dispatch(clearError);
+    if (registerStep === 'error') dispatch(setRegisterStep('1'));
+    if (authStep === 'error') dispatch(setAuthStep('auth'));
+
+    dispatch(clearError());
     navigate(to);
   };
 

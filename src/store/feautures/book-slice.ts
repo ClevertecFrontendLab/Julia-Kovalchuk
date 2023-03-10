@@ -21,8 +21,10 @@ const initialState: IBookState = {
 const fetchBook = createAsyncThunk<IBookInfo, string, { rejectValue: string }>(
   'book/fetchBook',
   async (id, { rejectWithValue }) => {
+    const token = localStorage.getItem('jwt');
+
     try {
-      return await bookAPI.getBookDetails(id);
+      return await bookAPI.getBookDetails(id, token as string);
     } catch (error) {
       const axiosError = error as AxiosError;
 

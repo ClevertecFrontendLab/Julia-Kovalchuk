@@ -7,7 +7,7 @@ import { bookAPI } from '../../services/book-api';
 import { IRegisterResponse, SignUpValues } from '../../types/types';
 
 interface IRegisterState {
-  step: string;
+  registerStep: string;
   username: string;
   password: string;
   firstName: string;
@@ -20,7 +20,7 @@ interface IRegisterState {
 }
 
 const initialState: IRegisterState = {
-  step: '1',
+  registerStep: '1',
   username: '',
   password: '',
   firstName: '',
@@ -49,8 +49,8 @@ const registerSlice = createSlice({
   name: 'register',
   initialState,
   reducers: {
-    setStep(state, { payload }: PayloadAction<string>) {
-      state.step = payload;
+    setRegisterStep(state, { payload }: PayloadAction<string>) {
+      state.registerStep = payload;
     },
     setUsername(state, { payload }: PayloadAction<string>) {
       state.username = payload;
@@ -82,13 +82,12 @@ const registerSlice = createSlice({
     });
     builder.addCase(fetchRegister.fulfilled, (state, { payload }) => {
       state.isRegisterLoading = false;
-      state.step = 'success';
-      localStorage.setItem('jwt', payload.jwt);
+      state.registerStep = 'success';
     });
     builder.addCase(fetchRegister.rejected, (state, { payload }: any) => {
       state.isRegisterLoading = false;
       state.errorRegister = 'Что-то пошло не так. Попробуйте еще раз';
-      state.step = 'error';
+      state.registerStep = 'error';
       state.errorStatus = payload.error.status;
     });
   },
@@ -96,5 +95,5 @@ const registerSlice = createSlice({
 
 export default registerSlice.reducer;
 export { fetchRegister };
-export const { setStep, setUsername, setFirstName, setLastName, setPassword, setPhone, setEmail, clearError } =
+export const { setRegisterStep, setUsername, setFirstName, setLastName, setPassword, setPhone, setEmail, clearError } =
   registerSlice.actions;

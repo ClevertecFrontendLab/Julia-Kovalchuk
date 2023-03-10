@@ -1,3 +1,5 @@
+import { Navigate } from 'react-router-dom';
+
 import { FormSignUp, ModalWindow, Title } from '../../components';
 import { useWindowSize } from '../../hooks/use-window-size';
 import { ROUTE } from '../../routes/routes';
@@ -9,9 +11,12 @@ import { Wrapper } from './styles';
 
 export const SignUpPage = () => {
   const { width = 0 } = useWindowSize();
-  const { errorStatus, step } = useAppSelector(signUp);
+  const { errorStatus, registerStep } = useAppSelector(signUp);
+  const isAuth = localStorage.getItem('isAuth');
 
-  return (
+  return isAuth === 'true' ? (
+    <Navigate to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`} />
+  ) : (
     <Wrapper data-test-id='auth'>
       <Title
         size={width > Breackpoint.SM ? 32 : 18}
@@ -22,11 +27,11 @@ export const SignUpPage = () => {
         Cleverland
       </Title>
 
-      {step === 'success' ? (
+      {registerStep === 'success' ? (
         <ModalWindow title='Регистрация успешна' buttonTitle='вход' to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}>
           Регистрация прошла успешно. Зайдите в личный кабинет, используя свои логин и пароль
         </ModalWindow>
-      ) : step === 'error' ? (
+      ) : registerStep === 'error' ? (
         errorStatus === 400 ? (
           <ModalWindow
             title='Данные не сохранились'

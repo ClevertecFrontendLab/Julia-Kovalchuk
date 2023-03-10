@@ -13,7 +13,7 @@ import {
   setLastName,
   setPassword,
   setPhone,
-  setStep,
+  setRegisterStep,
   setUsername,
 } from '../../store/feautures/register-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
@@ -39,7 +39,7 @@ export const FormSignUp = () => {
   const [inFocus, setInFocus] = useState(false);
   const [passwordHiden, setPasswordHiden] = useState(true);
   const dispatch = useAppDispatch();
-  const { isRegisterLoading, errorRegister, step } = useAppSelector(signUp);
+  const { isRegisterLoading, errorRegister, registerStep } = useAppSelector(signUp);
 
   const {
     handleSubmit,
@@ -54,7 +54,7 @@ export const FormSignUp = () => {
   } = useForm<SignUpValues>({ mode: 'onBlur' });
 
   const onSubmit: SubmitHandler<SignUpValues> = (userData) => {
-    if (step === '1') {
+    if (registerStep === '1') {
       if (!errors.username) {
         setError('username', { type: 'required', message: 'Поле не может быть пустым' });
       }
@@ -63,10 +63,10 @@ export const FormSignUp = () => {
       }
       dispatch(setUsername(userData.username));
       dispatch(setPassword(userData.password));
-      dispatch(setStep('2'));
+      dispatch(setRegisterStep('2'));
     }
 
-    if (step === '2') {
+    if (registerStep === '2') {
       if (!errors.lastName) {
         setError('lastName', { type: 'required', message: 'Поле не может быть пустым' });
       }
@@ -75,10 +75,10 @@ export const FormSignUp = () => {
       }
       dispatch(setFirstName(userData.firstName));
       dispatch(setLastName(userData.lastName));
-      dispatch(setStep('3'));
+      dispatch(setRegisterStep('3'));
     }
 
-    if (step === '3') {
+    if (registerStep === '3') {
       dispatch(setPhone(userData.phone));
       dispatch(setEmail(userData.email));
       dispatch(fetchRegister(userData));
@@ -109,7 +109,7 @@ export const FormSignUp = () => {
         message: 'Пароль не менее 8 символов, с заглавной буквой и цифрой',
       },
       pattern: {
-        value: /(?=.*\d)(?=.*[a-z]).{8,}/,
+        value: /(?=.*\d)(?=.*[A-Z]).{8,}/,
         message: 'Пароль не менее 8 символов, с заглавной буквой и цифрой',
       },
     },
@@ -141,10 +141,10 @@ export const FormSignUp = () => {
         Регистрация
       </Title>
       <Title size={14} color='black' weight={700} margin={32}>
-        {step} шаг из 3
+        {registerStep} шаг из 3
       </Title>
       <form onSubmit={handleSubmit(onSubmit)} data-test-id='register-form'>
-        {step === '1' && (
+        {registerStep === '1' && (
           <FormBox>
             <Container>
               <Controller
@@ -228,10 +228,12 @@ export const FormSignUp = () => {
                           <CheckIcon data-test-id='checkmark' />
                         </CheckBox>
                       )}
-                      <EyeBox type='button' onClick={handlePasswordHiden}>
-                        {passwordHiden && <EyeClosedIcon data-test-id='eye-closed' />}
-                        {!passwordHiden && <EyeIcon data-test-id='eye-opened' />}
-                      </EyeBox>
+                      {value && (
+                        <EyeBox type='button' onClick={handlePasswordHiden}>
+                          {passwordHiden && <EyeClosedIcon data-test-id='eye-closed' />}
+                          {!passwordHiden && <EyeIcon data-test-id='eye-opened' />}
+                        </EyeBox>
+                      )}
 
                       {(!errors.password ||
                         errors.password.type === 'pattern' ||
@@ -273,7 +275,7 @@ export const FormSignUp = () => {
           </FormBox>
         )}
 
-        {step === '2' && (
+        {registerStep === '2' && (
           <FormBox>
             <Container>
               <Controller
@@ -356,7 +358,7 @@ export const FormSignUp = () => {
           </FormBox>
         )}
 
-        {step === '3' && (
+        {registerStep === '3' && (
           <FormBox>
             <Container>
               <Controller

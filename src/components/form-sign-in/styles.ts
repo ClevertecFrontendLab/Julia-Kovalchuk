@@ -4,11 +4,6 @@ import styled from 'styled-components';
 import { ContainerFlex, ContainerFlexColumn } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
-interface IProps {
-  isError?: boolean;
-  isPartError?: boolean;
-}
-
 const Wrapper = styled.div`
   max-width: 528px;
   min-width: 528px;
@@ -22,9 +17,12 @@ const Wrapper = styled.div`
     padding: 24px 16px 27px;
   }
 `;
+const StyledForm = styled.form`
+  max-width: 100%;
+`;
 
 const FormBox = styled(ContainerFlexColumn)`
-  grid-gap: 50px;
+  grid-gap: 36px;
 `;
 
 const Container = styled(ContainerFlexColumn)`
@@ -35,18 +33,22 @@ const InputContainer = styled.div`
   position: relative;
 `;
 
-const Rules = styled.p<IProps>`
-  position: absolute;
-  left: 12px;
-  top: 58px;
+const Error = styled.p`
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.2px;
-  color: ${({ isError }) => (isError ? '#F42C4F' : '#A7A7A7')};
+  color: #f42c4f;
 `;
 
-const El = styled.span<IProps>`
-  color: ${({ isPartError }) => (isPartError ? '#F42C4F' : '#A7A7A7')};
+const ErrorBox = styled(ContainerFlexColumn)`
+  grid-gap: 3px;
+`;
+
+const RestoreLink = styled(Link)`
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #363636;
 `;
 
 const Note = styled(ContainerFlex)`
@@ -91,10 +93,38 @@ const EyeBox = styled.button`
   top: 16px;
 `;
 
-const CheckBox = styled.div`
-  position: absolute;
-  right: 44px;
-  top: 16px;
+const ForgotText = styled(Link)`
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #a7a7a7;
 `;
 
-export { Rules, El, InputContainer, FormBox, Container, Note, LinkNote, Text, EyeBox, CheckBox, Wrapper };
+const Rules = styled.p`
+  position: absolute;
+  left: 12px;
+  top: 58px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #f42c4f;
+`;
+
+export {
+  Error,
+  InputContainer,
+  FormBox,
+  Container,
+  Note,
+  LinkNote,
+  Text,
+  EyeBox,
+  Wrapper,
+  ForgotText,
+  ErrorBox,
+  RestoreLink,
+  Rules,
+  StyledForm,
+};
