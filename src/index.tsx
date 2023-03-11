@@ -8,7 +8,7 @@ import { ROUTE } from './routes/routes';
 import { store } from './store/store';
 import { GlobalStyle } from './ui/global-styles';
 import { AuthTemplate, MainTemplate, RequareAuth, SecondTemplate } from './components';
-import { BookPage, ContractPage, MainPage, SignInPage, SignUpPage } from './pages';
+import { BookPage, ContractPage, ForgotPasswordPage, MainPage, SignInPage, SignUpPage } from './pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -22,6 +22,7 @@ root.render(
             <Route path={ROUTE.HOME} element={<AuthTemplate />}>
               <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
               <Route path={ROUTE.SIGN_IN} element={<SignInPage />} />
+              <Route path={ROUTE.FORGOT_PASSWORD} element={<ForgotPasswordPage />} />
 
               {/* <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
                <Route path={ROUTE.RESSET_PASSWORD} element={<ResetPasswordPage />} />

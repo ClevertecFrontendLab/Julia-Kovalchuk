@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AxiosError } from 'axios';
 
 import { bookAPI } from '../../services/book-api';
-import { IAuthResponse, SignInValues } from '../../types/types';
+import { IAuthResponse, IRegisterError, SignInValues } from '../../types/types';
 
 interface IAuthState {
   authStep: string;
@@ -22,7 +22,22 @@ const initialState: IAuthState = {
   errorStatus: null,
 };
 
-const fetchAuth = createAsyncThunk<IAuthResponse, SignInValues>(
+// const fetchAllBooks = createAsyncThunk<IBookShortInfo[], undefined, { rejectValue: string }>(
+//   'allBooks/fetchAllBooks',
+//   async (_, { rejectWithValue }) => {
+//     const token = localStorage.getItem('jwt');
+
+//     try {
+//       return await bookAPI.getAllBooks(token as string);
+//     } catch (error) {
+//       const axiosError = error as AxiosError;
+
+//       return rejectWithValue(axiosError.message);
+//     }
+//   }
+// );
+
+const fetchAuth = createAsyncThunk<IAuthResponse, SignInValues, { rejectValue: any }>(
   'auth/fetchAuth',
   async (userData, { rejectWithValue }) => {
     try {
@@ -30,7 +45,10 @@ const fetchAuth = createAsyncThunk<IAuthResponse, SignInValues>(
     } catch (error) {
       const axiosError = error as AxiosError;
 
-      return rejectWithValue(axiosError.response?.data);
+      // if (!axiosError.response) {
+      //   throw error;
+      // }
+      return rejectWithValue(axiosError);
     }
   }
 );
@@ -67,9 +85,10 @@ const authSlice = createSlice({
     builder.addCase(fetchAuth.rejected, (state, { payload }: any) => {
       state.isAuthLoading = false;
       state.errorAuthMessage = 'Неверный логин или пароль!';
-      state.errorStatus = payload.error.status;
+      state.errorStatus = payload.response.status;
       state.isAuth = false;
-      if (payload.error.status !== 400) state.authStep = 'error';
+      console.log(payload.response.status);
+      if (payload.response.status && payload.response.status !== 400) state.authStep = 'error';
       localStorage.clear();
     });
   },

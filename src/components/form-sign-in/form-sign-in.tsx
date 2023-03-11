@@ -58,8 +58,8 @@ export const FormSignIn = () => {
 
   const handleFocus = () => {
     dispatch(clearAuthError());
-    clearErrors('identifier');
-    clearErrors('password');
+    // clearErrors('identifier');
+    // clearErrors('password');
   };
 
   const validationRules = {
@@ -91,12 +91,14 @@ export const FormSignIn = () => {
                     value={value}
                     type='text'
                     formFieldName='Логин'
-                    inFocus={!!value}
+                    inFocus={!!value || errorStatus === 400}
                     onBlur={onBlur}
                     onFocus={handleFocus}
                     isErrorField={!errorAuthMessage || !!errors.identifier}
                   />
-                  {errors.identifier && <Rules data-test-id='hint'>{errors.identifier.message}</Rules>}
+                  {errors.identifier && value === undefined && (
+                    <Rules data-test-id='hint'>{errors.identifier.message}</Rules>
+                  )}
                 </InputContainer>
               )}
             />
@@ -112,7 +114,7 @@ export const FormSignIn = () => {
                     onChange={onChange}
                     type={passwordHiden ? 'password' : 'text'}
                     formFieldName='Пароль'
-                    inFocus={!!value}
+                    inFocus={!!value || errorStatus === 400}
                     onBlur={onBlur}
                     onFocus={handleFocus}
                     isErrorField={!errorAuthMessage || !!errors.password}
@@ -124,7 +126,9 @@ export const FormSignIn = () => {
                       {!passwordHiden && <EyeIcon data-test-id='eye-opened' />}
                     </EyeBox>
                   )}
-                  {errors.password && <Rules data-test-id='hint'>{errors.password.message}</Rules>}
+                  {errors.password && value === undefined && (
+                    <Rules data-test-id='hint'>{errors.password.message}</Rules>
+                  )}
                 </InputContainer>
               )}
             />
