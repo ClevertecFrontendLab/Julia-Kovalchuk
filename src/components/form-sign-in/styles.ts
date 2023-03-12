@@ -101,6 +101,7 @@ const ForgotText = styled(Link)`
   line-height: 16px;
   letter-spacing: 0.2px;
   color: #a7a7a7;
+  margin-top: -15px;
 `;
 
 const Rules = styled.p`

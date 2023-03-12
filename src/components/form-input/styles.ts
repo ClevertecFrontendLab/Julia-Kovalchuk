@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { ContainerFlexColumn } from '../../ui/containers';
+import { Media } from '../../ui/media';
 
 interface IProps {
   inFocus?: boolean;
@@ -10,7 +11,6 @@ interface IProps {
 const Container = styled(ContainerFlexColumn)`
   width: 100%;
   position: relative;
-  /* grid-gap: 2px; */
 `;
 
 const StyledFormInput = styled.input<IProps>`

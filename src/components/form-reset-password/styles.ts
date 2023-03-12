@@ -70,6 +70,7 @@ const Rules = styled.p<IProps>`
   letter-spacing: 0.2px;
   color: ${({ isError }) => (isError ? '#F42C4F' : '#A7A7A7')};
 `;
+
 const Error = styled.p`
   padding-left: 12px;
   padding-top: 2px;

@@ -25,6 +25,10 @@ const Wrapper = styled.div`
 
 const FormBox = styled(ContainerFlexColumn)`
   grid-gap: 50px;
+
+  ${Media.SM} {
+    grid-gap: 44px;
+  }
 `;
 
 const Container = styled(ContainerFlexColumn)`

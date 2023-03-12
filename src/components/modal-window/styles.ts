@@ -14,7 +14,6 @@ const Wrapper = styled(ContainerFlexColumnCenter)`
   ${Media.SM} {
     grid-gap: 24px;
     margin-top: 20px;
-
     padding: 42px 16px;
   }
 `;
