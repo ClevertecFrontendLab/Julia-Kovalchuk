@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';

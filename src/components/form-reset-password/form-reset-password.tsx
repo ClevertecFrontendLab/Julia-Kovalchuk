@@ -5,8 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 import { CheckIcon, EyeClosedIcon, EyeIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
+import { fetchResetPassword } from '../../store/feautures/reset-password-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { resetPassword } from '../../store/selectors/reset-password-selector';
 import { IResetPasswordValues } from '../../types/types';
+import { validationRules } from '../../utils/validation-rules';
 import { FormInput, Loader, PrimaryButton, Title } from '..';
 
 import {
@@ -23,15 +26,14 @@ import {
   Text,
   Wrapper,
 } from './styles';
-import { validationRules } from '../../utils/validation-rules';
 
 export const FormResetPassword = () => {
-  // const dispatch = useAppDispatch();
-  // const { errorForgotMessage, isForgotLoading } = useAppSelector(forgorPassword);
   // const navigate = useNavigate();
   const [passwordHiden, setPasswordHiden] = useState(true);
   const [passwordConfirmationHiden, setPasswordConfirmationHiden] = useState(true);
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);
+  const dispatch = useAppDispatch();
+  const { isResetLoading } = useAppSelector(resetPassword);
 
   const {
     handleSubmit,
@@ -46,14 +48,7 @@ export const FormResetPassword = () => {
   const onSubmit: SubmitHandler<IResetPasswordValues> = (resetData) => {
     const data = { ...resetData, code: localStorage.getItem('code') };
 
-    // dispatch(fetchForgotPassword(email));
-    //   .unwrap()
-    //   .then(() => {
-    //     navigate(`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`);
-    //   })
-    //   .finally(() => {
-    //     reset();
-    //   });
+    dispatch(fetchResetPassword(data));
   };
 
   const handlePasswordHiden = () => {
@@ -205,7 +200,7 @@ export const FormResetPassword = () => {
           </PrimaryButton>
         </FormBox>
 
-        {/* {isForgotLoading && <Loader />} */}
+        {isResetLoading && <Loader />}
 
         <Note>
           <Text>После сохранения войдите в библиотеку, используя новый пароль</Text>

@@ -6,6 +6,7 @@ import bookReducer from './feautures/book-slice';
 import categoriesReducer from './feautures/categories-slice';
 import forgotPasswordReduser from './feautures/forgot-password-slice';
 import registerReduser from './feautures/register-slice';
+import resetPasswordReduser from './feautures/reset-password-slice';
 
 const store = configureStore({
   reducer: {
@@ -15,6 +16,7 @@ const store = configureStore({
     register: registerReduser,
     auth: authReduser,
     forgot: forgotPasswordReduser,
+    resetPassword: resetPasswordReduser,
   },
 });
 

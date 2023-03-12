@@ -175,7 +175,7 @@ export interface IForgotPasswordResponse {
 export interface IResetPasswordValues {
   password: string;
   passwordConfirmation: string;
-  code: string;
+  code: string | null;
 }
 
 export interface IResetPasswordResponse {

@@ -24,6 +24,8 @@ const SingInLink = styled(Link)`
   display: flex;
   align-items: center;
   grid-gap: 15px;
+  max-width: 528px;
+  min-width: 528px;
   padding: 26px 19px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -34,6 +36,12 @@ const SingInLink = styled(Link)`
   text-transform: uppercase;
   color: #727272;
   background: #f9f9fa;
+
+  ${Media.SM} {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 23px 19px;
+  }
 `;
 
 const StyledForm = styled.form`

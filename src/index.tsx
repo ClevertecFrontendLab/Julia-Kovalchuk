@@ -23,10 +23,6 @@ root.render(
               <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
               <Route path={ROUTE.SIGN_IN} element={<SignInPage />} />
               <Route path={ROUTE.FORGOT_PASSWORD} element={<ForgotPasswordPage />} />
-
-              {/* <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
-               <Route path={ROUTE.RESSET_PASSWORD} element={<ResetPasswordPage />} />
-               <Route path={ROUTE.PIXEMA} element={<ReactPixemaPage />} /> */}
             </Route>
 
             <Route element={<RequareAuth />}>

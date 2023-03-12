@@ -38,11 +38,7 @@ const fetchForgotPassword = createAsyncThunk<IForgotPasswordResponse, ForgotPass
 const forgotPasswordSlice = createSlice({
   name: 'forgot',
   initialState,
-  reducers: {
-    // setAuthStep(state, { payload }: PayloadAction<string>) {
-    //   state.authStep = payload;
-    // },
-  },
+  reducers: {},
   extraReducers(builder) {
     builder.addCase(fetchForgotPassword.pending, (state) => {
       state.isForgotLoading = true;
@@ -52,11 +48,13 @@ const forgotPasswordSlice = createSlice({
       state.isForgotLoading = false;
       state.errorForgotMessage = null;
       state.forgotPasswordStep = 'success';
+      localStorage.setItem('resetPasswordState', 'true');
     });
-    builder.addCase(fetchForgotPassword.rejected, (state, { payload }: any) => {
+    builder.addCase(fetchForgotPassword.rejected, (state) => {
       state.isForgotLoading = false;
-      state.errorForgotMessage = payload.message;
+      state.errorForgotMessage = 'error';
       state.forgotPasswordStep = 'error';
+      localStorage.clear();
     });
   },
 });
