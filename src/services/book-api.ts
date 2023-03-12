@@ -106,18 +106,5 @@ class BookAPI {
 //   }
 // );
 
-// BookAPI.API.interceptors.request.use(
-//   (config) => {
-//     const token = TokenService.getLocalAccessToken();
-//     if (token) {
-//       config.headers['Authorization'] = 'Bearer ' + token;
-//     }
-//     return config;
-//   },
-//   (error) => {
-//     return Promise.reject(error);
-//   }
-// );
-
 // https://github.com/axios/axios/issues/5011
 export const bookAPI = new BookAPI();
