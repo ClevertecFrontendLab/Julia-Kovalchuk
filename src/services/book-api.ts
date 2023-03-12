@@ -86,25 +86,4 @@ class BookAPI {
   }
 }
 
-// BookAPI.interceptors.response.use(
-//   (response) => response.data,
-//   (error) => {
-//     throw error;
-//   }
-// );
-
-// axios.interceptors.response.use(
-//   (response) => {
-//     console.log(response);
-
-//     return response;
-//   },
-//   (error) => {
-//     console.log(error);
-
-//     return Promise.reject(error);
-//   }
-// );
-
-// https://github.com/axios/axios/issues/5011
 export const bookAPI = new BookAPI();

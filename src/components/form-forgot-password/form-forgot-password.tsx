@@ -26,6 +26,8 @@ import {
 
 export const FormForgotPassword = () => {
   const [emptyError, setEmptyError] = useState(false);
+  // в браузере поведение валидации было согласно тестам, в тестах - валидация не работала - об этом много людей писало в телеге. Пришлось выкручиваться, поэтому в этом коже танцы с бубнами, точнее со стейтами
+
   const dispatch = useAppDispatch();
   const { errorForgotMessage, isForgotLoading } = useAppSelector(forgorPassword);
 
