@@ -1,11 +1,15 @@
 import axios from 'axios';
 
 import {
+  ForgotPasswordValues,
   IAuthResponse,
   IBookInfo,
   IBookShortInfo,
   ICategory,
+  IForgotPasswordResponse,
   IRegisterResponse,
+  IResetPasswordResponse,
+  IResetPasswordValues,
   SignInValues,
   SignUpValues,
 } from '../types/types';
@@ -16,6 +20,8 @@ enum Endpoint {
   DETAILS = 'books/',
   REGISTER = '/auth/local/register',
   AUTH = '/auth/local',
+  FORGOT = '/auth/forgot-password',
+  RESET = '/auth/reset-password',
 }
 
 class BookAPI {
@@ -24,8 +30,6 @@ class BookAPI {
   private readonly API = axios.create({
     baseURL: this.BASE_URL,
   });
-
-  // private readonly token = localStorage.getItem('jwt');
 
   public async getCategories(token: string) {
     const { data } = await this.API.get<ICategory[]>(Endpoint.CATEGORIES, {
@@ -68,12 +72,50 @@ class BookAPI {
 
     return data;
   }
+
+  public async forgotPassword(email: ForgotPasswordValues) {
+    const { data } = await this.API.post<IForgotPasswordResponse>(`${Endpoint.FORGOT}`, email);
+
+    return data;
+  }
+
+  public async resetPassword(resetData: IResetPasswordValues) {
+    const { data } = await this.API.post<IResetPasswordResponse>(`${Endpoint.RESET}`, resetData);
+
+    return data;
+  }
 }
 
 // BookAPI.interceptors.response.use(
 //   (response) => response.data,
 //   (error) => {
 //     throw error;
+//   }
+// );
+
+// axios.interceptors.response.use(
+//   (response) => {
+//     console.log(response);
+
+//     return response;
+//   },
+//   (error) => {
+//     console.log(error);
+
+//     return Promise.reject(error);
+//   }
+// );
+
+// BookAPI.API.interceptors.request.use(
+//   (config) => {
+//     const token = TokenService.getLocalAccessToken();
+//     if (token) {
+//       config.headers['Authorization'] = 'Bearer ' + token;
+//     }
+//     return config;
+//   },
+//   (error) => {
+//     return Promise.reject(error);
 //   }
 // );
 

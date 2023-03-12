@@ -8,6 +8,7 @@ import { clearAuthError, fetchAuth } from '../../store/feautures/auth-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { signIn } from '../../store/selectors/auth-selector';
 import { SignInValues } from '../../types/types';
+import { validationRules } from '../../utils/validation-rules';
 import { FormInput, Loader, PrimaryButton, Title } from '..';
 
 import {
@@ -37,13 +38,11 @@ export const FormSignIn = () => {
     handleSubmit,
     control,
     formState: { errors },
-    clearErrors,
     reset,
   } = useForm<SignInValues>({ mode: 'onBlur' });
 
   const onSubmit: SubmitHandler<SignInValues> = (userData) => {
     dispatch(fetchAuth(userData))
-      .unwrap()
       .then(() => {
         navigate(`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`);
       })
@@ -58,17 +57,6 @@ export const FormSignIn = () => {
 
   const handleFocus = () => {
     dispatch(clearAuthError());
-    // clearErrors('identifier');
-    // clearErrors('password');
-  };
-
-  const validationRules = {
-    identifier: {
-      required: 'Поле не может быть пустым',
-    },
-    password: {
-      required: 'Поле не может быть пустым',
-    },
   };
 
   return (
@@ -106,7 +94,7 @@ export const FormSignIn = () => {
             <Controller
               control={control}
               name='password'
-              rules={validationRules.password}
+              rules={validationRules.passwordSimple}
               render={({ field: { value, onChange, onBlur } }) => (
                 <InputContainer>
                   <FormInput
@@ -137,7 +125,7 @@ export const FormSignIn = () => {
             )}
             {errorStatus === 400 && (
               <ErrorBox>
-                <Error>{errorAuthMessage}</Error>
+                <Error data-test-id='hint'>{errorAuthMessage}</Error>
                 <RestoreLink to={`${ROUTE.HOME}${ROUTE.FORGOT_PASSWORD}`}>Восстановить?</RestoreLink>
               </ErrorBox>
             )}

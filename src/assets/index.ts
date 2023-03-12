@@ -1,5 +1,6 @@
 import { ReactComponent as ArrowDownIcon } from './icons/arrow-down.svg';
 import { ReactComponent as ArrowLeftIcon } from './icons/arrow-left.svg';
+import { ReactComponent as ArrowRightIcon } from './icons/arrow-right.svg';
 import { ReactComponent as ArrowUpIcon } from './icons/arrow-up.svg';
 import { ReactComponent as BurgerIcon } from './icons/burger-icon.svg';
 import { ReactComponent as CheckIcon } from './icons/check.svg';
@@ -52,4 +53,5 @@ export {
   EyeClosedIcon,
   EyeIcon,
   CheckIcon,
+  ArrowRightIcon,
 };

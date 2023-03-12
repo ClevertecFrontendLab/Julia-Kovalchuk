@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { ContainerFlex, ContainerFlexColumn } from '../../ui/containers';
@@ -12,7 +11,7 @@ interface IProps {
 const Wrapper = styled.div`
   max-width: 528px;
   min-width: 528px;
-  padding: 48px 56px;
+  padding: 32px 56px 48px;
   border-radius: 30px;
   background: #ffffff;
 
@@ -23,30 +22,20 @@ const Wrapper = styled.div`
   }
 `;
 
+const StyledForm = styled.form`
+  max-width: 100%;
+`;
+
 const FormBox = styled(ContainerFlexColumn)`
-  grid-gap: 50px;
+  grid-gap: 36px;
 `;
 
 const Container = styled(ContainerFlexColumn)`
-  grid-gap: 36px;
+  grid-gap: 34px;
 `;
 
 const InputContainer = styled.div`
   position: relative;
-`;
-
-const Rules = styled.p<IProps>`
-  position: absolute;
-  left: 12px;
-  top: 58px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: ${({ isError }) => (isError ? '#F42C4F' : '#A7A7A7')};
-`;
-
-const El = styled.span<IProps>`
-  color: ${({ isPartError }) => (isPartError ? '#F42C4F' : '#A7A7A7')};
 `;
 
 const Note = styled(ContainerFlex)`
@@ -72,17 +61,22 @@ const Text = styled.p`
   }
 `;
 
-const LinkNote = styled(Link)`
-  display: flex;
-  align-items: center;
-  grid-gap: 15px;
-  font-weight: 600;
+const Rules = styled.p<IProps>`
+  position: absolute;
+  left: 12px;
+  top: 58px;
   font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #363636;
-  margin: 0px;
-  padding: 0px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: ${({ isError }) => (isError ? '#F42C4F' : '#A7A7A7')};
+`;
+const Error = styled.p`
+  padding-left: 12px;
+  padding-top: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #f42c4f;
 `;
 
 const EyeBox = styled.button`
@@ -97,4 +91,8 @@ const CheckBox = styled.div`
   top: 16px;
 `;
 
-export { CheckBox, Container, El, EyeBox, FormBox, InputContainer, LinkNote, Note, Rules, Text, Wrapper };
+const El = styled.span<IProps>`
+  color: ${({ isPartError }) => (isPartError ? '#F42C4F' : '#A7A7A7')};
+`;
+
+export { CheckBox, Container, El, Error, EyeBox, FormBox, InputContainer, Note, Rules, StyledForm, Text, Wrapper };

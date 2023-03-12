@@ -4,16 +4,14 @@ import styled from 'styled-components';
 import { ContainerFlex, ContainerFlexColumn } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
-interface IProps {
-  isError?: boolean;
-  isPartError?: boolean;
-}
-
 const Wrapper = styled.div`
   max-width: 528px;
   min-width: 528px;
-  padding: 48px 56px;
+  padding: 32px 56px 48px;
   border-radius: 30px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   background: #ffffff;
 
   ${Media.SM} {
@@ -22,31 +20,34 @@ const Wrapper = styled.div`
     padding: 24px 16px 27px;
   }
 `;
-
-const FormBox = styled(ContainerFlexColumn)`
-  grid-gap: 50px;
+const SingInLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  padding: 26px 19px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #727272;
+  background: #f9f9fa;
 `;
 
-const Container = styled(ContainerFlexColumn)`
+const StyledForm = styled.form`
+  max-width: 100%;
+`;
+
+const FormBox = styled(ContainerFlexColumn)`
   grid-gap: 36px;
 `;
 
+const Container = styled(ContainerFlexColumn)``;
+
 const InputContainer = styled.div`
   position: relative;
-`;
-
-const Rules = styled.p<IProps>`
-  position: absolute;
-  left: 12px;
-  top: 58px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: ${({ isError }) => (isError ? '#F42C4F' : '#A7A7A7')};
-`;
-
-const El = styled.span<IProps>`
-  color: ${({ isPartError }) => (isPartError ? '#F42C4F' : '#A7A7A7')};
 `;
 
 const Note = styled(ContainerFlex)`
@@ -85,16 +86,22 @@ const LinkNote = styled(Link)`
   padding: 0px;
 `;
 
-const EyeBox = styled.button`
-  position: absolute;
-  right: 16px;
-  top: 16px;
+const Rules = styled.p`
+  padding-left: 12px;
+  padding-top: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #727272;
 `;
 
-const CheckBox = styled.div`
-  position: absolute;
-  right: 44px;
-  top: 16px;
+const Error = styled.p`
+  padding-left: 12px;
+  padding-top: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #f42c4f;
 `;
 
-export { CheckBox, Container, El, EyeBox, FormBox, InputContainer, LinkNote, Note, Rules, Text, Wrapper };
+export { Container, Error, FormBox, InputContainer, LinkNote, Note, Rules, SingInLink, StyledForm, Text, Wrapper };

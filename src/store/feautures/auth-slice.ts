@@ -45,9 +45,10 @@ const fetchAuth = createAsyncThunk<IAuthResponse, SignInValues, { rejectValue: a
     } catch (error) {
       const axiosError = error as AxiosError;
 
-      // if (!axiosError.response) {
-      //   throw error;
-      // }
+      if (!axiosError.response) {
+        throw error;
+      }
+
       return rejectWithValue(axiosError);
     }
   }

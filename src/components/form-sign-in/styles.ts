@@ -17,6 +17,7 @@ const Wrapper = styled.div`
     padding: 24px 16px 27px;
   }
 `;
+
 const StyledForm = styled.form`
   max-width: 100%;
 `;
@@ -113,18 +114,18 @@ const Rules = styled.p`
 `;
 
 export {
-  Error,
-  InputContainer,
-  FormBox,
   Container,
-  Note,
-  LinkNote,
-  Text,
-  EyeBox,
-  Wrapper,
-  ForgotText,
+  Error,
   ErrorBox,
+  EyeBox,
+  ForgotText,
+  FormBox,
+  InputContainer,
+  LinkNote,
+  Note,
   RestoreLink,
   Rules,
   StyledForm,
+  Text,
+  Wrapper,
 };

@@ -18,9 +18,10 @@ interface IProps {
   buttonTitle: string;
   children: ReactNode;
   to: string;
+  showButton?: boolean;
 }
 
-export const ModalWindow = ({ title, buttonTitle, children, to }: IProps) => {
+export const ModalWindow = ({ title, buttonTitle, children, to, showButton }: IProps) => {
   const { width = 0 } = useWindowSize();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -43,17 +44,19 @@ export const ModalWindow = ({ title, buttonTitle, children, to }: IProps) => {
 
       <Text>{children}</Text>
 
-      <PrimaryButton
-        large={350}
-        middle={306}
-        padding={14}
-        fontSize={16}
-        isBig={true}
-        type='button'
-        onClick={handleClick}
-      >
-        {buttonTitle}
-      </PrimaryButton>
+      {showButton && (
+        <PrimaryButton
+          large={350}
+          middle={306}
+          padding={14}
+          fontSize={16}
+          isBig={true}
+          type='button'
+          onClick={handleClick}
+        >
+          {buttonTitle}
+        </PrimaryButton>
+      )}
     </Wrapper>
   );
 };

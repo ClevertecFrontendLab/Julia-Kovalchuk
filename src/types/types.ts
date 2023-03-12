@@ -130,6 +130,10 @@ export type SignInValues = {
   password: string;
 };
 
+export type ForgotPasswordValues = {
+  email: string;
+};
+
 export interface IUserResponse {
   id: number;
   username: string;
@@ -160,6 +164,21 @@ export interface IRegisterError {
 }
 
 export interface IAuthResponse {
+  jwt: string;
+  user: IUserResponse;
+}
+
+export interface IForgotPasswordResponse {
+  ok: boolean;
+}
+
+export interface IResetPasswordValues {
+  password: string;
+  passwordConfirmation: string;
+  code: string;
+}
+
+export interface IResetPasswordResponse {
   jwt: string;
   user: IUserResponse;
 }

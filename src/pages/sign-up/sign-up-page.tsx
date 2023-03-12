@@ -28,7 +28,12 @@ export const SignUpPage = () => {
       </Title>
 
       {registerStep === 'success' ? (
-        <ModalWindow title='Регистрация успешна' buttonTitle='вход' to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}>
+        <ModalWindow
+          title='Регистрация успешна'
+          buttonTitle='вход'
+          to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}
+          showButton={true}
+        >
           Регистрация прошла успешно. Зайдите в личный кабинет, используя свои логин и пароль
         </ModalWindow>
       ) : registerStep === 'error' ? (
@@ -37,11 +42,17 @@ export const SignUpPage = () => {
             title='Данные не сохранились'
             buttonTitle='назад к регистрации'
             to={`${ROUTE.HOME}${ROUTE.SIGN_UP}`}
+            showButton={true}
           >
             Такой логин или e-mail уже записан в системе. Попробуйте зарегистрироваться по другому логину или e-mail.
           </ModalWindow>
         ) : (
-          <ModalWindow title='Данные не сохранились' buttonTitle='повторить' to={`${ROUTE.HOME}${ROUTE.SIGN_UP}`}>
+          <ModalWindow
+            title='Данные не сохранились'
+            buttonTitle='повторить'
+            to={`${ROUTE.HOME}${ROUTE.SIGN_UP}`}
+            showButton={true}
+          >
             Что-то пошло не так и ваша регистрация не завершилась. Попробуйте ещё раз
           </ModalWindow>
         )

@@ -1,17 +1,22 @@
-import { Link, Navigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 
-import { Title } from '../../components';
+import { FormForgotPassword, FormResetPassword, ModalWindow, Title } from '../../components';
 import { useWindowSize } from '../../hooks/use-window-size';
 import { ROUTE } from '../../routes/routes';
 import { useAppSelector } from '../../store/hooks/hooks';
+import { forgorPassword } from '../../store/selectors/forgot-password-selector';
 import { Breackpoint } from '../../ui/media';
 
 import { Wrapper } from './styles';
 
 export const ForgotPasswordPage = () => {
   const { width = 0 } = useWindowSize();
-  // const { errorStatus, authStep } = useAppSelector(signIn);
+  const { forgotPasswordStep } = useAppSelector(forgorPassword);
   const isAuth = localStorage.getItem('isAuth');
+
+  const resetPage = useLocation().search;
+
+  localStorage.setItem('code', useLocation().search.split('code=')[1]);
 
   return isAuth === 'true' ? (
     <Navigate to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`} />
@@ -25,13 +30,15 @@ export const ForgotPasswordPage = () => {
       >
         Cleverland
       </Title>
-      {/* {authStep === 'error' ? (
-        <ModalWindow title='Вход не выполнен' buttonTitle='повторить' to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}>
-          Что-то пошло не так. Попробуйте ещё раз
-        </ModalWindow>
+      {resetPage ? (
+        <FormResetPassword />
+      ) : forgotPasswordStep === 'forgot' ? (
+        <FormForgotPassword />
       ) : (
-        <FormSignIn />
-      )} */}
+        <ModalWindow title='Письмо выслано' buttonTitle='' to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`} showButton={false}>
+          Перейдите в вашу почту, чтобы воспользоваться подсказками по восстановлению пароля
+        </ModalWindow>
+      )}
     </Wrapper>
   );
 };

@@ -7,6 +7,7 @@ import { Breadcrumbs } from './breadcrumbs/breadcrumbs';
 import { ButtonOccupied } from './button-occupied/button-occupied';
 import { ButtonOccupiedUntil } from './button-occupied-until/button-occupied-until';
 import { Footer } from './footer/footer';
+import { FormForgotPassword } from './form-forgot-password/form-forgot-password';
 import { FormInput } from './form-input/form-input';
 import { FormInputPhone } from './form-input-phone/form-input-phone';
 import { FormSignIn } from './form-sign-in/form-sign-in';
@@ -30,6 +31,7 @@ import { Slider } from './slider/slider';
 import { SquareBookCard } from './square-book-card/square-book-card';
 import { Stars } from './stars/stars';
 import { Title } from './title/title';
+import { FormResetPassword } from './form-reset-password/form-reset-password';
 
 export {
   Breadcrumbs,
@@ -64,4 +66,6 @@ export {
   FormInputPhone,
   ModalWindow,
   FormSignIn,
+  FormForgotPassword,
+  FormResetPassword,
 };

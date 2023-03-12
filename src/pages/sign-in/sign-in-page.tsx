@@ -27,7 +27,12 @@ export const SignInPage = () => {
         Cleverland
       </Title>
       {authStep === 'error' && errorStatus !== 400 ? (
-        <ModalWindow title='Вход не выполнен' buttonTitle='повторить' to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}>
+        <ModalWindow
+          title='Вход не выполнен'
+          buttonTitle='повторить'
+          to={`${ROUTE.HOME}${ROUTE.SIGN_IN}`}
+          showButton={true}
+        >
           Что-то пошло не так. Попробуйте ещё раз
         </ModalWindow>
       ) : (
