@@ -80,7 +80,7 @@ const registerSlice = createSlice({
       state.isRegisterLoading = true;
       state.errorRegister = null;
     });
-    builder.addCase(fetchRegister.fulfilled, (state, { payload }) => {
+    builder.addCase(fetchRegister.fulfilled, (state) => {
       state.isRegisterLoading = false;
       state.registerStep = 'success';
     });

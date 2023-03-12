@@ -44,7 +44,7 @@ const forgotPasswordSlice = createSlice({
       state.isForgotLoading = true;
       state.errorForgotMessage = null;
     });
-    builder.addCase(fetchForgotPassword.fulfilled, (state, { payload }) => {
+    builder.addCase(fetchForgotPassword.fulfilled, (state) => {
       state.isForgotLoading = false;
       state.errorForgotMessage = null;
       state.forgotPasswordStep = 'success';
@@ -61,4 +61,3 @@ const forgotPasswordSlice = createSlice({
 
 export default forgotPasswordSlice.reducer;
 export { fetchForgotPassword };
-// export const {} = forgotPasswordSlice.actions;

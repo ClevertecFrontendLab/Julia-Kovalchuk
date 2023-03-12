@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AxiosError } from 'axios';
 
 import { bookAPI } from '../../services/book-api';
-import { IAuthResponse, IRegisterError, SignInValues } from '../../types/types';
+import { IAuthResponse, SignInValues } from '../../types/types';
 
 interface IAuthState {
   authStep: string;
@@ -21,21 +21,6 @@ const initialState: IAuthState = {
   errorAuthMessage: null,
   errorStatus: null,
 };
-
-// const fetchAllBooks = createAsyncThunk<IBookShortInfo[], undefined, { rejectValue: string }>(
-//   'allBooks/fetchAllBooks',
-//   async (_, { rejectWithValue }) => {
-//     const token = localStorage.getItem('jwt');
-
-//     try {
-//       return await bookAPI.getAllBooks(token as string);
-//     } catch (error) {
-//       const axiosError = error as AxiosError;
-
-//       return rejectWithValue(axiosError.message);
-//     }
-//   }
-// );
 
 const fetchAuth = createAsyncThunk<IAuthResponse, SignInValues, { rejectValue: any }>(
   'auth/fetchAuth',
@@ -88,7 +73,6 @@ const authSlice = createSlice({
       state.errorAuthMessage = 'Неверный логин или пароль!';
       state.errorStatus = payload.response.status;
       state.isAuth = false;
-      console.log(payload.response.status);
       if (payload.response.status && payload.response.status !== 400) state.authStep = 'error';
       localStorage.clear();
     });

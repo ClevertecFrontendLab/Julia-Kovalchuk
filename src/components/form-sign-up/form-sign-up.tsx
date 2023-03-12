@@ -1,7 +1,5 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import React, { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 
 import { ArrowLeftIcon, CheckIcon, EyeClosedIcon, EyeIcon } from '../../assets';
@@ -40,7 +38,7 @@ export const FormSignUp = () => {
   const [inFocus, setInFocus] = useState(false);
   const [passwordHiden, setPasswordHiden] = useState(true);
   const dispatch = useAppDispatch();
-  const { isRegisterLoading, errorRegister, registerStep } = useAppSelector(signUp);
+  const { isRegisterLoading, registerStep } = useAppSelector(signUp);
 
   const {
     handleSubmit,
@@ -82,10 +80,6 @@ export const FormSignUp = () => {
     }
   };
 
-  const onFocus = () => {
-    setInFocus(true);
-  };
-
   const handlePasswordHiden = () => {
     setPasswordHiden(!passwordHiden);
   };
@@ -106,10 +100,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='username'
                 rules={validationRules.username}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => {
+                render={({ field: { value, onChange, onBlur } }) => {
                   let letterError = false;
                   let numberError = false;
 
@@ -152,10 +143,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='password'
                 rules={validationRules.password}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => {
+                render={({ field: { value, onChange, onBlur } }) => {
                   let bigLetterError = false;
                   let numberError = false;
                   let lengthError = false;
@@ -237,10 +225,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='firstName'
                 rules={validationRules.firstName}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => (
+                render={({ field: { value, onChange } }) => (
                   <InputContainer>
                     <FormInput
                       name='firstName'
@@ -270,10 +255,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='lastName'
                 rules={validationRules.lastName}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => (
+                render={({ field: { value, onChange } }) => (
                   <InputContainer>
                     <FormInput
                       name='lastName'
@@ -320,10 +302,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='phone'
                 rules={validationRules.phone}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => (
+                render={({ field: { value, onChange } }) => (
                   <InputContainer>
                     <FormInputPhone
                       name='phone'
@@ -357,10 +336,7 @@ export const FormSignUp = () => {
                 control={control}
                 name='email'
                 rules={validationRules.email}
-                render={({
-                  field: { value, onChange, onBlur },
-                  fieldState: { invalid, isTouched, isDirty, error },
-                }) => (
+                render={({ field: { value, onChange } }) => (
                   <InputContainer>
                     <FormInput
                       name='email'

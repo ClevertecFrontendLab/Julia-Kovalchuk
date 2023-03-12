@@ -1,10 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import { useRef, useState } from 'react';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
 
 import { CheckIcon, EyeClosedIcon, EyeIcon } from '../../assets';
-import { ROUTE } from '../../routes/routes';
 import { fetchResetPassword } from '../../store/feautures/reset-password-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { resetPassword } from '../../store/selectors/reset-password-selector';
@@ -28,7 +26,6 @@ import {
 } from './styles';
 
 export const FormResetPassword = () => {
-  // const navigate = useNavigate();
   const [passwordHiden, setPasswordHiden] = useState(true);
   const [passwordConfirmationHiden, setPasswordConfirmationHiden] = useState(true);
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);

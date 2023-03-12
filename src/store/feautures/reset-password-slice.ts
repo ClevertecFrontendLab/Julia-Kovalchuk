@@ -4,12 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { AxiosError } from 'axios';
 
 import { bookAPI } from '../../services/book-api';
-import {
-  ForgotPasswordValues,
-  IForgotPasswordResponse,
-  IResetPasswordResponse,
-  IResetPasswordValues,
-} from '../../types/types';
+import { IResetPasswordResponse, IResetPasswordValues } from '../../types/types';
 
 interface IResetPasswordState {
   resetPasswordStep: string;
@@ -49,7 +44,7 @@ const resetPasswordSlice = createSlice({
       state.isResetLoading = true;
       state.errorResetMessage = null;
     });
-    builder.addCase(fetchResetPassword.fulfilled, (state, { payload }) => {
+    builder.addCase(fetchResetPassword.fulfilled, (state) => {
       state.isResetLoading = false;
       state.errorResetMessage = null;
       state.resetPasswordStep = 'success';
@@ -64,4 +59,3 @@ const resetPasswordSlice = createSlice({
 
 export default resetPasswordSlice.reducer;
 export { fetchResetPassword };
-// export const {} = forgotPasswordSlice.actions;
