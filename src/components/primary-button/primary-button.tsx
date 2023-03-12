@@ -10,6 +10,9 @@ interface IProps {
   padding?: number;
   fontSize?: number;
   isBig?: boolean;
+  disabled?: boolean;
+  onClick?: () => void;
+  type?: 'reset' | 'button' | 'submit';
 }
 
 export const PrimaryButton = ({
@@ -20,8 +23,21 @@ export const PrimaryButton = ({
   padding = 11,
   fontSize = 12,
   isBig = false,
+  disabled = false,
+  onClick,
+  type = 'button',
 }: IProps) => (
-  <StyledPrimaryButton large={large} middle={middle} small={small} padding={padding} fontSize={fontSize} isBig={isBig}>
+  <StyledPrimaryButton
+    large={large}
+    middle={middle}
+    small={small}
+    padding={padding}
+    fontSize={fontSize}
+    isBig={isBig}
+    disabled={disabled}
+    onClick={onClick}
+    type={type}
+  >
     {children}
   </StyledPrimaryButton>
 );

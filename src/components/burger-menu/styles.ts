@@ -76,4 +76,16 @@ const ContainerLink = styled.div`
   width: 100%;
 `;
 
-export { Wrapper, CategoryBox, Amount, ProfileContainer, Container, ButtonHide, ContainerLink };
+const ExitButton = styled.button`
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: #363636;
+  text-align: left;
+  ${Media.SM} {
+    width: 100%;
+  }
+`;
+
+export { Wrapper, CategoryBox, Amount, ProfileContainer, Container, ButtonHide, ContainerLink, ExitButton };

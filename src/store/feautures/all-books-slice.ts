@@ -34,8 +34,10 @@ const initialState: IAllBooksState = {
 const fetchAllBooks = createAsyncThunk<IBookShortInfo[], undefined, { rejectValue: string }>(
   'allBooks/fetchAllBooks',
   async (_, { rejectWithValue }) => {
+    const token = localStorage.getItem('jwt');
+
     try {
-      return await bookAPI.getAllBooks();
+      return await bookAPI.getAllBooks(token as string);
     } catch (error) {
       const axiosError = error as AxiosError;
 

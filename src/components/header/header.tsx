@@ -7,12 +7,24 @@ import { useOnClickHide } from '../../hooks/use-on-click-hide';
 import { ROUTE } from '../../routes/routes';
 import { BurgerMenu } from '../burger-menu/burger-menu';
 
-import { Box, BurgerBox, Container, LogoContainer, StyledHeader, Text, Title, UserInfo } from './styles';
+import {
+  Box,
+  BurgerBox,
+  Container,
+  LogoContainer,
+  ProfileLink,
+  ProfileMenu,
+  StyledHeader,
+  Text,
+  Title,
+  UserInfo,
+} from './styles';
 
 export const Header = () => {
   const [isOpenBurgerMenu, toggleIsOpenBurgerMenu] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
   const [isOpenCategory, setIsOpenCategory] = useState(true);
+  const [isProfileMenuOpen, setisProfileMenuOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   useOnClickHide(ref, () => toggleIsOpenBurgerMenu(false));
 
@@ -28,8 +40,12 @@ export const Header = () => {
     setIsOpenCategory(false);
   };
 
+  const handleProfileMenuView = () => {
+    setisProfileMenuOpen(!isProfileMenuOpen);
+  };
+
   return (
-    <StyledHeader>
+    <StyledHeader $isProfileMenuOpen={isProfileMenuOpen}>
       <Link to={`${ROUTE.BOOKS}${ROUTE.ALLBOOKS}`}>
         <LogoContainer>
           <Box>
@@ -53,9 +69,13 @@ export const Header = () => {
       </div>
       <Container>
         <Title>Бибилиотека</Title>
-        <UserInfo>
+        <UserInfo type='button' onClick={handleProfileMenuView}>
           <Text>Привет, Юлия!</Text>
           <img src={avatar} alt='avatar' />
+          <ProfileMenu $isProfileMenuOpen={isProfileMenuOpen}>
+            <ProfileLink to=''>Профиль</ProfileLink>
+            <ProfileLink to=''>Выход</ProfileLink>
+          </ProfileMenu>
         </UserInfo>
       </Container>
     </StyledHeader>

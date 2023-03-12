@@ -1,15 +1,19 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { ContainerFlex, ContainerFlexBeetween } from '../../ui/containers';
 import { Media } from '../../ui/media';
 
-const StyledHeader = styled.header`
+type $isProfileMenuOpen = { $isProfileMenuOpen: boolean };
+
+const StyledHeader = styled.header<$isProfileMenuOpen>`
   display: flex;
   align-items: center;
   width: 100%;
   padding: 32px 0px 15px;
   margin-bottom: 47px;
   background: white;
+  box-shadow: ${({ $isProfileMenuOpen }) => ($isProfileMenuOpen ? '0 4px 4px rgba(54, 54, 54, 0.05)' : 'none')};
 
   ${Media.MD} {
     padding: 32px 0px 24px;
@@ -81,7 +85,10 @@ const LogoContainer = styled(ContainerFlex)`
   }
 `;
 
-const UserInfo = styled(ContainerFlex)`
+const UserInfo = styled.button`
+  position: relative;
+  display: flex;
+  align-items: center;
   grid-gap: 16px;
 
   ${Media.MD} {
@@ -94,4 +101,29 @@ const Text = styled.p`
   color: #363636;
 `;
 
-export { Title, Box, LogoContainer, UserInfo, Text, Container, StyledHeader, BurgerBox };
+const ProfileMenu = styled.div<$isProfileMenuOpen>`
+  position: absolute;
+  top: 80px;
+  right: 0;
+  z-index: 10;
+  display: ${({ $isProfileMenuOpen }) => ($isProfileMenuOpen ? 'flex' : 'none')};
+  flex-direction: column;
+  align-items: end;
+  grid-gap: 32px;
+  min-width: 270px;
+  padding-block: 32px;
+  padding-right: 24px;
+  background: #ffffff;
+  box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  border-radius: 0px 0px 10px 10px;
+`;
+
+const ProfileLink = styled(Link)`
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: #363636;
+`;
+
+export { Title, Box, LogoContainer, UserInfo, Text, Container, StyledHeader, BurgerBox, ProfileMenu, ProfileLink };

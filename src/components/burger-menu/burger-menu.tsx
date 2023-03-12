@@ -1,16 +1,26 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 import { ArrowDownIcon, ArrowUpIcon } from '../../assets';
 import { ROUTE } from '../../routes/routes';
 import { fetchAllBooks, searchBooks, sortByCategory } from '../../store/feautures/all-books-slice';
+import { unlogin } from '../../store/feautures/auth-slice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
 import { getAllBooks } from '../../store/selectors/all-books-selector';
 import { getCategories } from '../../store/selectors/categories-selector';
 import { CustomAsidelink } from '../custom-aside-link/custom-aside-link';
 
-import { Amount, ButtonHide, CategoryBox, Container, ContainerLink, ProfileContainer, Wrapper } from './styles';
+import {
+  Amount,
+  ButtonHide,
+  CategoryBox,
+  Container,
+  ContainerLink,
+  ExitButton,
+  ProfileContainer,
+  Wrapper,
+} from './styles';
 
 interface IProps {
   isOpen: boolean;
@@ -25,10 +35,16 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
   const { categoriesAmount, searchValue } = useAppSelector(getAllBooks);
   const currentPath = useParams();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const handleClick = () => {
     handleView();
     handleBurgerView();
+  };
+
+  const handleExit = () => {
+    dispatch(unlogin());
+    navigate(`${ROUTE.SIGN_IN}`);
   };
 
   useEffect(() => {
@@ -93,9 +109,9 @@ export const BurgerMenu = ({ isOpen, handleBurgerView, handleView, handleCategor
         <CustomAsidelink to={ROUTE.PROFILE} onClick={handleClick} type='primary'>
           Профиль
         </CustomAsidelink>
-        <CustomAsidelink to={ROUTE.OFFER} onClick={handleClick} type='primary'>
-          Выход
-        </CustomAsidelink>
+        <ExitButton onClick={handleExit} type='button'>
+          <div data-test-id='exit-button'>Выход</div>
+        </ExitButton>
       </ProfileContainer>
     </Wrapper>
   );

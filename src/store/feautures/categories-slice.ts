@@ -21,8 +21,10 @@ const initialState: ICategoriesState = {
 const fetchCategories = createAsyncThunk<ICategory[], undefined, { rejectValue: string }>(
   'categories/fetchCategories',
   async (_, { rejectWithValue }) => {
+    const token = localStorage.getItem('jwt');
+
     try {
-      return await bookAPI.getCategories();
+      return await bookAPI.getCategories(token as string);
     } catch (error) {
       const axiosError = error as AxiosError;
 
